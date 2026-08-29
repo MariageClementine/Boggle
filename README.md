@@ -1,2 +1,6 @@
 # Boggle
-Projet de développement d'une version virtuelle du plateau de jeu Boggle ainsi que son Timer
+Projet de développement d'une version virtuelle du plateau de jeu Boggle ainsi que son Timer.
+
+Outils utilisés: 
+  - Uml: StarUML
+  - Développement: IntelliJ, Maven
