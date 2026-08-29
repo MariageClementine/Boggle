@@ -44,6 +44,9 @@
           <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Model</a></span>
         
           <span>::</span>
+          <span class="label label-info"><a href='57295dd8c3adab5dc39982854059a090.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Boggle</a></span>
+        
+          <span>::</span>
           <span class="label label-info"><a href='03f62c0cdba04733823e19a689c7a437.html'><span class='node-icon staruml-icon icon-UMLClass'></span>BoggleGame</a></span>
         
       </section>
@@ -160,6 +163,13 @@
             <td><p>The grid for the game. Contains an instanciation of the Grid object once startGame() has been called. Contains null otherwise.</p></td>
           </tr>
           
+          <tr>
+            <td>protected</td>
+            <td><a href="900e2ce0236566be54662d2e0fac251f.html">DICE_FACES</a></td>
+            <td>int[16][6] </td>
+            <td></td>
+          </tr>
+          
         </table>
       </section>
       
@@ -204,14 +214,14 @@ Returns the number corresponding to the chosen difficulty.</p></td>
           <tr>
             <td>public</td>
             <td><a href="1d815e7d2975d9ac910a9c240f940790.html">chooseAction(): int</a></td>
-            <td><p>Displays a list of the possible actions the user can do. 
+            <td><p>Displays a list of the possible actions the user can do (displaying the menu, or playing). 
 Returns the number corresponding to the chosen action.</p></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="60651c5e6046db3d5c7762ac434467ba.html">chooseGrid()</a></td>
-            <td></td>
+            <td><a href="794bd6268d5454e17f06cfceed3b1b1f.html">playGame()</a></td>
+            <td><p>Manages a game: the display of the Timer, the Light, and the Grid.</p></td>
           </tr>
           
         </table>
@@ -421,8 +431,6 @@ Returns the number corresponding to the chosen action.</p></td>
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='ec3f87f372a5ddc74797673c6abd1641.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>Creates (BoggleGame—Grid)</a></li>
-        
         <li><a href='7580af0b9a92aa81ba824ca659d5aec3.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>Creates (BoggleGame→Grid)</a></li>
         
         <li><a href='48161077baa6775071908cbd03833c45.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>Starts (BoggleGame→Timer)</a></li>
@@ -439,8 +447,6 @@ Returns the number corresponding to the chosen action.</p></td>
 <section class="element-list">
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
-        
-        <li><a href='ec3f87f372a5ddc74797673c6abd1641.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>Creates (BoggleGame—Grid)</a></li>
         
         <li><a href='7580af0b9a92aa81ba824ca659d5aec3.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>Creates (BoggleGame→Grid)</a></li>
         
