@@ -7,7 +7,7 @@ public class Grid {
      *  Lists all the faces (interior List) for each dice (exterior List).
      *  The same dices are always used, just randomly positioned, thus the choice of a constant.
      */
-    public static final List<List<String>> DICE_FACES = List.of(
+    public final List<List<String>> DICE_FACES = List.of(
             List.of("E","V","G","T","I","N"),
             List.of("D","E","C","A","M","P"),
             List.of("I","E","L","R","U","W"),

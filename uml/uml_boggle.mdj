@@ -2034,25 +2034,6 @@
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAGgRBeR4r+WTvA=",
-											"_parent": {
-												"$ref": "AAAAAAGgQ+HVcr4HiPw="
-											},
-											"model": {
-												"$ref": "AAAAAAGgRBeR37+T4ws="
-											},
-											"fillColor": "#C4D6E9",
-											"font": "Arial;13;0",
-											"parentStyle": true,
-											"left": 549,
-											"top": 738,
-											"width": 140.80712890625,
-											"height": 13,
-											"text": "+rollDie()",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAGgRBdvU7+NXIk=",
 											"_parent": {
 												"$ref": "AAAAAAGgQ+HVcr4HiPw="
@@ -2064,10 +2045,29 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 753,
+											"top": 738,
 											"width": 140.80712890625,
 											"height": 13,
 											"text": "+getFaces(): String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGgRBeR4r+WTvA=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ+HVcr4HiPw="
+											},
+											"model": {
+												"$ref": "AAAAAAGgRBeR37+T4ws="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 549,
+											"top": 753,
+											"width": 140.80712890625,
+											"height": 13,
+											"text": "+rollDie()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2086,7 +2086,7 @@
 											"top": 768,
 											"width": 140.80712890625,
 											"height": 13,
-											"text": "+toSting()",
+											"text": "+toString()",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3114,15 +3114,6 @@
 								},
 								{
 									"_type": "UMLOperation",
-									"_id": "AAAAAAGgRBeR37+T4ws=",
-									"_parent": {
-										"$ref": "AAAAAAGgQ+HVcb3+ETs="
-									},
-									"name": "rollDie",
-									"documentation": "Setter. Sets randomly the active face."
-								},
-								{
-									"_type": "UMLOperation",
 									"_id": "AAAAAAGgRBdvUL+K1M8=",
 									"_parent": {
 										"$ref": "AAAAAAGgQ+HVcb3+ETs="
@@ -3143,11 +3134,20 @@
 								},
 								{
 									"_type": "UMLOperation",
+									"_id": "AAAAAAGgRBeR37+T4ws=",
+									"_parent": {
+										"$ref": "AAAAAAGgQ+HVcb3+ETs="
+									},
+									"name": "rollDie",
+									"documentation": "Setter. Sets randomly the active face."
+								},
+								{
+									"_type": "UMLOperation",
 									"_id": "AAAAAAGgRBjmhr+b/ow=",
 									"_parent": {
 										"$ref": "AAAAAAGgQ+HVcb3+ETs="
 									},
-									"name": "toSting",
+									"name": "toString",
 									"documentation": "Displays the active face."
 								}
 							]
