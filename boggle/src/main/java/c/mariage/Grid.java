@@ -1,4 +1,4 @@
-package org.example;
+package c.mariage;
 
 import java.util.List;
 
