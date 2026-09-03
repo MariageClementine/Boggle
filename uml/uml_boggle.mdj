@@ -1462,6 +1462,26 @@
 											"height": 13,
 											"text": "-dice: Dice[z]",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGgZztqPIYdgDE=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ+B20b3K9uY="
+											},
+											"model": {
+												"$ref": "AAAAAAGgZztqNYYaVhc="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 549,
+											"top": 412,
+											"width": 215.22705078125,
+											"height": 13,
+											"underline": true,
+											"text": "#DICE_FACES: List<List<String>>",
+											"horizontalAlignment": 0
 										}
 									],
 									"fillColor": "#C4D6E9",
@@ -1470,7 +1490,7 @@
 									"left": 544,
 									"top": 377,
 									"width": 225.22705078125,
-									"height": 38
+									"height": 53
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1495,7 +1515,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 420,
+											"top": 435,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+Grid()",
@@ -1514,7 +1534,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 435,
+											"top": 450,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+getSlots(): Dice",
@@ -1533,7 +1553,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 450,
+											"top": 465,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+setSlot(xSlot: int, ySlot: int, die: Die)",
@@ -1552,7 +1572,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 465,
+											"top": 480,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+getDice(): Dice",
@@ -1571,7 +1591,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 480,
+											"top": 495,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+setDice(placeInList: int, die: Die)",
@@ -1590,7 +1610,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 495,
+											"top": 510,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+displayGrid()",
@@ -1609,7 +1629,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 510,
+											"top": 525,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+shuffleDice()",
@@ -1628,7 +1648,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 525,
+											"top": 540,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+resetGrid()",
@@ -1639,7 +1659,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": true,
 									"left": 544,
-									"top": 415,
+									"top": 430,
 									"width": 225.22705078125,
 									"height": 128
 								},
@@ -1690,7 +1710,7 @@
 							"left": 544,
 							"top": 352,
 							"width": 224.22705078125,
-							"height": 191,
+							"height": 206,
 							"autoResize": true,
 							"nameCompartment": {
 								"$ref": "AAAAAAGgQ+B20b3Fa5o="
@@ -1730,7 +1750,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 614,
-									"top": 588,
+									"top": 596,
 									"width": 58.89990234375,
 									"height": 13,
 									"alpha": 1.4766886669069748,
@@ -1754,7 +1774,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 635,
-									"top": 584,
+									"top": 592,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1776,7 +1796,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 591,
-									"top": 585,
+									"top": 593,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1795,7 +1815,7 @@
 								"$ref": "AAAAAAGgQ+B20b3Ee0U="
 							},
 							"lineStyle": 2,
-							"points": "606:543;606:640",
+							"points": "606:558;606:640",
 							"nameLabel": {
 								"$ref": "AAAAAAGgRCLZ5cMF6Hg="
 							},
@@ -1851,7 +1871,7 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 647,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
 											"text": "Die"
 										},
@@ -1892,7 +1912,7 @@
 									"parentStyle": true,
 									"left": 544,
 									"top": 640,
-									"width": 142.13623046875,
+									"width": 150.80712890625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGgQ+HVcr4CEKU="
@@ -1931,9 +1951,9 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 670,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
-											"text": "-faces: char[6]",
+											"text": "-faces: String[6]",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1950,9 +1970,9 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 685,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
-											"text": "-activeFace: char",
+											"text": "-activeFace: String",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1961,7 +1981,7 @@
 									"parentStyle": true,
 									"left": 544,
 									"top": 665,
-									"width": 142.13623046875,
+									"width": 150.80712890625,
 									"height": 38
 								},
 								{
@@ -1988,9 +2008,9 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 708,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
-											"text": "+Die(char[6])",
+											"text": "+Die(List<String>)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2007,9 +2027,9 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 723,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
-											"text": "+getActiveFace(): char",
+											"text": "+getActiveFace(): String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2026,7 +2046,7 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 738,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
 											"text": "+rollDie()",
 											"horizontalAlignment": 0
@@ -2045,9 +2065,9 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 753,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
-											"text": "+getFaces(): char",
+											"text": "+getFaces(): String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2064,7 +2084,7 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 768,
-											"width": 132.13623046875,
+											"width": 140.80712890625,
 											"height": 13,
 											"text": "+toSting()",
 											"horizontalAlignment": 0
@@ -2075,7 +2095,7 @@
 									"parentStyle": true,
 									"left": 544,
 									"top": 703,
-									"width": 142.13623046875,
+									"width": 150.80712890625,
 									"height": 83
 								},
 								{
@@ -2124,7 +2144,7 @@
 							"containerChangeable": true,
 							"left": 544,
 							"top": 640,
-							"width": 141.13623046875,
+							"width": 149.80712890625,
 							"height": 161,
 							"nameCompartment": {
 								"$ref": "AAAAAAGgQ+HVcr4Bwys="
@@ -2379,6 +2399,7 @@
 											"model": {
 												"$ref": "AAAAAAGgTlxOZngEMrI="
 											},
+											"visible": false,
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
@@ -2397,7 +2418,7 @@
 									"left": 552,
 									"top": 145,
 									"width": 190.91796875,
-									"height": 38
+									"height": 23
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -2422,7 +2443,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 557,
-											"top": 188,
+											"top": 173,
 											"width": 180.91796875,
 											"height": 13,
 											"text": "+BoggleGame()",
@@ -2441,7 +2462,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 557,
-											"top": 203,
+											"top": 188,
 											"width": 180.91796875,
 											"height": 13,
 											"text": "+chooseDfficulty(): int",
@@ -2460,7 +2481,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 557,
-											"top": 218,
+											"top": 203,
 											"width": 180.91796875,
 											"height": 13,
 											"text": "+startGame()",
@@ -2479,7 +2500,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 557,
-											"top": 233,
+											"top": 218,
 											"width": 180.91796875,
 											"height": 13,
 											"text": "+displayRules()",
@@ -2498,7 +2519,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 557,
-											"top": 248,
+											"top": 233,
 											"width": 180.91796875,
 											"height": 13,
 											"text": "+chooseAction(): int",
@@ -2517,7 +2538,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 557,
-											"top": 263,
+											"top": 248,
 											"width": 180.91796875,
 											"height": 13,
 											"text": "+playGame()",
@@ -2528,7 +2549,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": true,
 									"left": 552,
-									"top": 183,
+									"top": 168,
 									"width": 190.91796875,
 									"height": 98
 								},
@@ -2855,6 +2876,18 @@
 									"documentation": "The Dice list that will be used by the slots. The size of the list is 16, in the default version of the grid.",
 									"visibility": "private",
 									"type": "Dice[z]"
+								},
+								{
+									"_type": "UMLAttribute",
+									"_id": "AAAAAAGgZztqNYYaVhc=",
+									"_parent": {
+										"$ref": "AAAAAAGgQ+B20b3Cu5k="
+									},
+									"name": "DICE_FACES",
+									"documentation": "Constant containing a list of each Dice's face.",
+									"visibility": "protected",
+									"isStatic": true,
+									"type": "List<List<String>>"
 								}
 							],
 							"operations": [
@@ -3024,7 +3057,7 @@
 									"name": "faces",
 									"documentation": "Each face of the Die.",
 									"visibility": "private",
-									"type": "char[6]"
+									"type": "String[6]"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -3035,7 +3068,7 @@
 									"name": "activeFace",
 									"documentation": "The face up top, which will be displayed.",
 									"visibility": "private",
-									"type": "char"
+									"type": "String"
 								}
 							],
 							"operations": [
@@ -3046,7 +3079,7 @@
 										"$ref": "AAAAAAGgQ+HVcb3+ETs="
 									},
 									"name": "Die",
-									"documentation": "Constructor. Takes one of the constants \"FACE\" in parameter and register it in the attribute \"faces\".",
+									"documentation": "Constructor. Takes the List given in parameter and sets the attribute \"faces\" with the values.\n",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
@@ -3054,7 +3087,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGgRBY0/r9t0Uk="
 											},
-											"name": "char[6]",
+											"name": "List<String>",
 											"type": ""
 										}
 									]
@@ -3074,7 +3107,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGgRBb2aL94rr8="
 											},
-											"type": "char",
+											"type": "String",
 											"direction": "return"
 										}
 									]
@@ -3103,7 +3136,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGgRBdvUL+K1M8="
 											},
-											"type": "char",
+											"type": "String",
 											"direction": "return"
 										}
 									]
