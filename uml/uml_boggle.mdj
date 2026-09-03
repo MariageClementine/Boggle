@@ -2865,7 +2865,7 @@
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
 									"name": "Grid",
-									"documentation": "Default contructor, representing the grid by default (4x4 slots)."
+									"documentation": "Default contructor, representing the grid by default (4x4 slots).\nCreates the \"slots\" Array and the Dice, then fills the \"dice\" attribute."
 								},
 								{
 									"_type": "UMLOperation",
