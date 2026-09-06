@@ -1480,7 +1480,7 @@
 											"top": 412,
 											"width": 215.22705078125,
 											"height": 13,
-											"text": "-dice: Die[]",
+											"text": "-diceArray: Die[]",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1575,17 +1575,17 @@
 											"top": 480,
 											"width": 215.22705078125,
 											"height": 13,
-											"text": "+getDiceList() : Die[]()",
+											"text": "+getDiceArray() : Die[]()",
 											"horizontalAlignment": 0
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAGgQ+JcIb5KycU=",
+											"_id": "AAAAAAGgd17Femkl6as=",
 											"_parent": {
 												"$ref": "AAAAAAGgQ+B20b3LSw4="
 											},
 											"model": {
-												"$ref": "AAAAAAGgQ+JcH75HpWo="
+												"$ref": "AAAAAAGgd17FU2kibKk="
 											},
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
@@ -1594,7 +1594,26 @@
 											"top": 495,
 											"width": 215.22705078125,
 											"height": 13,
-											"text": "+setDice(pos: int, die: Die)",
+											"text": "+createDie(List<String>): Die",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGgd2YXWWk8j8w=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ+B20b3LSw4="
+											},
+											"model": {
+												"$ref": "AAAAAAGgd2YXSWk5WGs="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 549,
+											"top": 510,
+											"width": 215.22705078125,
+											"height": 13,
+											"text": "+addDieToArray(pos: int, Die: die)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1610,7 +1629,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 510,
+											"top": 525,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+displayGrid()",
@@ -1629,7 +1648,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 525,
+											"top": 540,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+shuffleDice()",
@@ -1648,7 +1667,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 540,
+											"top": 555,
 											"width": 215.22705078125,
 											"height": 13,
 											"text": "+resetGrid()",
@@ -1661,7 +1680,7 @@
 									"left": 544,
 									"top": 430,
 									"width": 225.22705078125,
-									"height": 128
+									"height": 143
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1710,7 +1729,7 @@
 							"left": 544,
 							"top": 352,
 							"width": 224.22705078125,
-							"height": 206,
+							"height": 221,
 							"autoResize": true,
 							"nameCompartment": {
 								"$ref": "AAAAAAGgQ+B20b3Fa5o="
@@ -1750,7 +1769,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 614,
-									"top": 596,
+									"top": 603,
 									"width": 58.89990234375,
 									"height": 13,
 									"alpha": 1.4766886669069748,
@@ -1774,7 +1793,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 635,
-									"top": 592,
+									"top": 599,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1796,7 +1815,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 591,
-									"top": 593,
+									"top": 600,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1815,7 +1834,7 @@
 								"$ref": "AAAAAAGgQ+B20b3Ee0U="
 							},
 							"lineStyle": 2,
-							"points": "606:558;606:640",
+							"points": "606:573;606:640",
 							"nameLabel": {
 								"$ref": "AAAAAAGgRCLZ5cMF6Hg="
 							},
@@ -2884,8 +2903,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
-									"name": "dice",
-									"documentation": "The Die list that will be used by the slots. The size of the list is 16, in the default version of the grid.",
+									"name": "diceArray",
+									"documentation": "The Die array that will be used by the slots. The size of the list is 16, in the default version of the grid.",
 									"visibility": "private",
 									"type": "Die[]"
 								}
@@ -2898,7 +2917,7 @@
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
 									"name": "Grid",
-									"documentation": "Default contructor, representing the grid by default (4x4 slots).\nCreates the \"slots\" Array and the Dice, then fills the \"dice\" attribute."
+									"documentation": "Default constructor, representing the grid by default (4x4 slots).\nCreates the \"slots\" Array and the Dice, then fills the \"diceArray\" attribute."
 								},
 								{
 									"_type": "UMLOperation",
@@ -2907,7 +2926,7 @@
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
 									"name": "getSlots",
-									"documentation": "Getter for the \"slots\" attribute.",
+									"documentation": "Getter for the \"slots\" attribute. ",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
@@ -2968,37 +2987,66 @@
 									"_parent": {
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
-									"name": "getDiceList() : Die[]",
-									"documentation": "Getter for the \"dice\" attribute."
+									"name": "getDiceArray() : Die[]",
+									"documentation": "Getter for the \"diceArray\" attribute."
 								},
 								{
 									"_type": "UMLOperation",
-									"_id": "AAAAAAGgQ+JcH75HpWo=",
+									"_id": "AAAAAAGgd17FU2kibKk=",
 									"_parent": {
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
-									"name": "setDice",
-									"documentation": "Setter for the \"dice\" attribute. Instanciates the dice that will be used in the game.",
+									"name": "createDie",
+									"documentation": "Instanciates the dice that will be used in the game. Returns the created Die.",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
-											"_id": "AAAAAAGgQ+gwhL58URI=",
+											"_id": "AAAAAAGgd18Lv2kpEhE=",
 											"_parent": {
-												"$ref": "AAAAAAGgQ+JcH75HpWo="
+												"$ref": "AAAAAAGgd17FU2kibKk="
+											},
+											"type": {
+												"$ref": "AAAAAAGgQ+HVcb3+ETs="
+											},
+											"direction": "return"
+										},
+										{
+											"_type": "UMLParameter",
+											"_id": "AAAAAAGgd182T2ksieo=",
+											"_parent": {
+												"$ref": "AAAAAAGgd17FU2kibKk="
+											},
+											"name": "List<String>",
+											"type": ""
+										}
+									]
+								},
+								{
+									"_type": "UMLOperation",
+									"_id": "AAAAAAGgd2YXSWk5WGs=",
+									"_parent": {
+										"$ref": "AAAAAAGgQ+B20b3Cu5k="
+									},
+									"name": "addDieToArray",
+									"parameters": [
+										{
+											"_type": "UMLParameter",
+											"_id": "AAAAAAGgd2Z8BmlAsew=",
+											"_parent": {
+												"$ref": "AAAAAAGgd2YXSWk5WGs="
 											},
 											"name": "pos",
 											"type": "int"
 										},
 										{
 											"_type": "UMLParameter",
-											"_id": "AAAAAAGgQ+gwhL593oE=",
+											"_id": "AAAAAAGgd2Z8B2lBnlg=",
 											"_parent": {
-												"$ref": "AAAAAAGgQ+JcH75HpWo="
+												"$ref": "AAAAAAGgd2YXSWk5WGs="
 											},
-											"name": "die",
-											"type": {
-												"$ref": "AAAAAAGgQ+HVcb3+ETs="
-											}
+											"name": "Die",
+											"documentation": "Setter for the \"diceArray\" attribute. Adds a die in the \"diceArray\" ",
+											"type": "die"
 										}
 									]
 								},
@@ -3018,7 +3066,7 @@
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
 									"name": "shuffleDice",
-									"documentation": "Takes the Dice in the \"dice\" array and sets them randomly in the \"slots\" attribute."
+									"documentation": "Takes the Dice in the \"diceArray\"  and sets them randomly in the \"slots\" attribute."
 								},
 								{
 									"_type": "UMLOperation",

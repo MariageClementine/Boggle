@@ -1,7 +1,7 @@
 package c.mariage;
 
+import java.util.Iterator;
 import java.util.List;
-import c.mariage.Die;
 
 public class Grid {
     /**
@@ -33,22 +33,24 @@ public class Grid {
     private Die[][] slots;
 
     /**
-     * The Dice list that will be used by the slots. The size of the list is 16, in the default version of the grid.
+     * The Dice array that will be used by the slots. The size of the list is 16, in the default version of the grid.
      */
-    private Die[] dices;
+    private Die[] diceArray;
 
     /**
-     * Default contructor, representing the grid by default (4x4 slots). Creates the "slots" Array and the Dice,
-     * then fills the "dice" attribute.
+     * Default constructor, representing the grid by default (4x4 slots). Creates the "slots" Array and the Dice,
+     * then fills the "diceArray" attribute.
      */
     public Grid(){
         // Initializing arrays size
-        this.dices = new Die[16];
+        this.diceArray = new Die[16];
         this.slots = new Die[4][4];
 
         //Instantiating Dice
-        for (Die d: this.DICE_FACES){
-            
+        Iterator<List<String>> it = this.DICE_FACES.iterator();
+        int index = 0;
+        for (List l: this.DICE_FACES){
+
         }
 
 
@@ -57,56 +59,64 @@ public class Grid {
     }
 
     /**
-     *
-     * @return
+     * Getter for the "slots" attribute.
+     * @return the slots of the Grid, which are dice in a 2 dimensioned array
      */
     public Die[][] getSlots(){
         return null;
     }
 
     /**
-     *
-     * @param xSlot
-     * @param ySlot
-     * @param die
+     * Setter for the "slots" attribute.
+     * @param xSlot the position in the row
+     * @param ySlot the position in the column
+     * @param die the Die to be inserted
      */
     public void setSlot (int xSlot, int ySlot, Die die){
 
     }
 
     /**
-     *
-     * @return
+     * Getter for the "diceArray" attribute.
+     * @return the list of Dice used for the game
      */
-    public Die[] getDiceList(){
+    public Die[] getDiceArray(){
         return null;
     }
 
     /**
-     *
-     * @param pos
-     * @param die
+     * Instanciates the dice that will be used in the game.
+     * @return the Die created
      */
-    public void setDices(int pos, Die die){
+    public Die createDie(List<String> list){
+        return null;
+    }
+
+    /**
+     * Setter for the "diceArray" attribute. Adds a die in the "diceArray"
+     * @param pos the position in the List
+     * @param die the die to add to the List
+     */
+    public void addDieToArray(int pos, Die die){
 
     }
 
     /**
-     *
+     * Displays the grid, in an array of 4x4 on the terminal. The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
      */
     public void displayGrid(){
 
     }
 
     /**
-     *
+     * Takes the Dice in the "diceArray" and sets them randomly in the "slots" attribute.
      */
     public void shuffleDice(){
 
     }
 
     /**
-     *
+     * Sets the "slots" array elements to "null".
      */
     public void resetGrid(){
 

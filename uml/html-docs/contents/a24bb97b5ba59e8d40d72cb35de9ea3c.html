@@ -183,9 +183,9 @@
           
           <tr>
             <td>private</td>
-            <td><a href="1435d273ed6863bdc6776c310940bb3b.html">dice</a></td>
+            <td><a href="1435d273ed6863bdc6776c310940bb3b.html">diceArray</a></td>
             <td>Die[] </td>
-            <td><div class='prose'><p>The Die list that will be used by the slots. The size of the list is 16, in the default version of the grid.</p>
+            <td><div class='prose'><p>The Die array that will be used by the slots. The size of the list is 16, in the default version of the grid.</p>
 </div></td>
           </tr>
           
@@ -208,15 +208,15 @@
           <tr>
             <td>public</td>
             <td><a href="41a65e3adb61fff7d066685a97b26bb5.html">Grid()</a></td>
-            <td><div class='prose'><p>Default contructor, representing the grid by default (4x4 slots).
-Creates the &quot;slots&quot; Array and the Dice, then fills the &quot;dice&quot; attribute.</p>
+            <td><div class='prose'><p>Default constructor, representing the grid by default (4x4 slots).
+Creates the &quot;slots&quot; Array and the Dice, then fills the &quot;diceArray&quot; attribute.</p>
 </div></td>
           </tr>
           
           <tr>
             <td>public</td>
             <td><a href="a405f62f1a3f23d5113bc25e9215aae2.html">getSlots(): Die</a></td>
-            <td><div class='prose'><p>Getter for the &quot;slots&quot; attribute.</p>
+            <td><div class='prose'><p>Getter for the &quot;slots&quot; attribute. </p>
 </div></td>
           </tr>
           
@@ -229,16 +229,22 @@ Creates the &quot;slots&quot; Array and the Dice, then fills the &quot;dice&quot
           
           <tr>
             <td>public</td>
-            <td><a href="ac76447052d324d886e1e90b544c07db.html">getDiceList() : Die[]()</a></td>
-            <td><div class='prose'><p>Getter for the &quot;dice&quot; attribute.</p>
+            <td><a href="ac76447052d324d886e1e90b544c07db.html">getDiceArray() : Die[]()</a></td>
+            <td><div class='prose'><p>Getter for the &quot;diceArray&quot; attribute.</p>
 </div></td>
           </tr>
           
           <tr>
             <td>public</td>
-            <td><a href="3d62bd915ee391758af788188f7c47e9.html">setDice(pos: int, die: Die)</a></td>
-            <td><div class='prose'><p>Setter for the &quot;dice&quot; attribute. Instanciates the dice that will be used in the game.</p>
+            <td><a href="452c736a7e8f93bc6f7bd1b4134c699c.html">createDie(List&lt;String&gt;): Die</a></td>
+            <td><div class='prose'><p>Instanciates the dice that will be used in the game. Returns the created Die.</p>
 </div></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="c6a2261ac78bb5c66cad6add55f3e4d1.html">addDieToArray(pos: int, Die: die)</a></td>
+            <td><div class='prose'></div></td>
           </tr>
           
           <tr>
@@ -251,7 +257,7 @@ Creates the &quot;slots&quot; Array and the Dice, then fills the &quot;dice&quot
           <tr>
             <td>public</td>
             <td><a href="5ecf6af092eda8b8b1cd4d8fc7ab62ce.html">shuffleDice()</a></td>
-            <td><div class='prose'><p>Takes the Dice in the &quot;dice&quot; array and sets them randomly in the &quot;slots&quot; attribute.</p>
+            <td><div class='prose'><p>Takes the Dice in the &quot;diceArray&quot;  and sets them randomly in the &quot;slots&quot; attribute.</p>
 </div></td>
           </tr>
           
