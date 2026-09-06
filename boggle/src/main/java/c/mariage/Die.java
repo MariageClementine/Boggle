@@ -1,6 +1,8 @@
 package c.mariage;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Random;
 
 public class Die {
@@ -23,8 +25,11 @@ public class Die {
 
         this.faces = new String[6];
 
-        for(int i= 0; i<this.faces.length;i++){
-            this.faces[i] = listFaces.get(i);
+        int index=0;
+        Iterator<String> it = listFaces.iterator();
+        while(it.hasNext()){
+            this.faces[index] = it.next();
+            index++;
         }
     }
 

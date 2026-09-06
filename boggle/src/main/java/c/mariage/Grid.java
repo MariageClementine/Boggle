@@ -1,6 +1,7 @@
 package c.mariage;
 
-import java.util.Iterator;
+import c.mariage.exception.DieNotCreatedException;
+import c.mariage.exception.BadListException;
 import java.util.List;
 
 public class Grid {
@@ -47,11 +48,17 @@ public class Grid {
         this.slots = new Die[4][4];
 
         //Instantiating Dice
-        Iterator<List<String>> it = this.DICE_FACES.iterator();
         int index = 0;
-        for (List l: this.DICE_FACES){
+/*        for (List l: this.DICE_FACES){
+            Die d = this.createDie(l);
 
-        }
+            if(d!=null){
+
+            }
+            else{
+                throw new DieNotCreatedException("Variable die is null");
+            }
+        }*/
 
 
         //Instantiating slots
@@ -63,7 +70,7 @@ public class Grid {
      * @return the slots of the Grid, which are dice in a 2 dimensioned array
      */
     public Die[][] getSlots(){
-        return null;
+        return this.slots;
     }
 
     /**
@@ -81,15 +88,21 @@ public class Grid {
      * @return the list of Dice used for the game
      */
     public Die[] getDiceArray(){
-        return null;
+        return this.diceArray;
     }
 
     /**
      * Instanciates the dice that will be used in the game.
+     * The parameter is the List of the Die's faces.
      * @return the Die created
      */
     public Die createDie(List<String> list){
-        return null;
+        if(list!=null || !(list.isEmpty())){
+            return null;
+        }
+        else {
+            throw new BadListException("List of faces empty or null");
+        }
     }
 
     /**
@@ -118,7 +131,11 @@ public class Grid {
     /**
      * Sets the "slots" array elements to "null".
      */
+    /*
     public void resetGrid(){
-
-    }
+        for(Die[] da : this.slots){
+            for (Die d : da){
+            }
+        }
+    }*/
 }
