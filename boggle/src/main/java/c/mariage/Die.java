@@ -55,4 +55,17 @@ public class Die {
         this.activeFace = this.faces[rand.nextInt(6)];
         return this.getActiveFace();
     }
+
+    /**
+     * Returns each face of the Die in a String format. Used for debugging.
+     * @return the faces of the dice in a String format
+     */
+    @Override
+    public String toString(){
+        String res = "";
+        for (String letter: this.faces){
+            res+= letter+" ";
+        }
+        return res;
+    }
 }

@@ -1,7 +1,6 @@
 package c.mariage;
 
-import c.mariage.exception.DieNotCreatedException;
-import c.mariage.exception.BadListException;
+import c.mariage.exception.DieNotAddedException;
 import java.util.List;
 
 public class Grid {
@@ -42,26 +41,25 @@ public class Grid {
      * Default constructor, representing the grid by default (4x4 slots). Creates the "slots" Array and the Dice,
      * then fills the "diceArray" attribute.
      */
-    public Grid(){
+    public Grid()  {
         // Initializing arrays size
         this.diceArray = new Die[16];
         this.slots = new Die[4][4];
 
         //Instantiating Dice
         int index = 0;
-/*        for (List l: this.DICE_FACES){
-            Die d = this.createDie(l);
+        Die die;
 
-            if(d!=null){
+        //Each of the 16 dice
+        for (List<String> list : this.DICE_FACES) {
 
-            }
-            else{
-                throw new DieNotCreatedException("Variable die is null");
-            }
-        }*/
+            //Is created
+            die = this.createDie(list);
 
-
-        //Instantiating slots
+            //And added to the array
+            this.addDieToArray(index, die);
+            index++;
+        }
 
     }
 
@@ -78,39 +76,49 @@ public class Grid {
      * @param xSlot the position in the row
      * @param ySlot the position in the column
      * @param die the Die to be inserted
+     * @return 0 if the Die was successfully inserted in the slot, 1 if the slot is already taken
      */
-    public void setSlot (int xSlot, int ySlot, Die die){
+    public int setSlot (int xSlot, int ySlot, Die die){
 
+        if (this.slots[xSlot][ySlot]!=null){
+            return 1;
+        }
+        else{
+            this.slots[xSlot][ySlot] = die;
+            return 0;
+        }
     }
 
     /**
      * Getter for the "diceArray" attribute.
-     * @return the list of Dice used for the game
+     * @return the array of Dice used for the game
      */
     public Die[] getDiceArray(){
         return this.diceArray;
     }
 
     /**
-     * Instanciates the dice that will be used in the game.
+     * Instantiates the dice that will be used in the game.
      * The parameter is the List of the Die's faces.
      * @return the Die created
      */
     public Die createDie(List<String> list){
-        if(list!=null || !(list.isEmpty())){
-            return null;
-        }
-        else {
-            throw new BadListException("List of faces empty or null");
-        }
+        return new Die(list);
     }
 
     /**
      * Setter for the "diceArray" attribute. Adds a die in the "diceArray"
      * @param pos the position in the List
      * @param die the die to add to the List
+     * @exception DieNotAddedException if an error occurred with the index of the array
      */
-    public void addDieToArray(int pos, Die die){
+    public void addDieToArray(int pos, Die die) throws DieNotAddedException{
+        if (this.diceArray[pos]!=null){
+            throw new DieNotAddedException("Position already taken in Array of Dice");
+        }
+        else{
+            this.diceArray[pos] = die;
+        }
 
     }
 
@@ -131,11 +139,11 @@ public class Grid {
     /**
      * Sets the "slots" array elements to "null".
      */
-    /*
     public void resetGrid(){
-        for(Die[] da : this.slots){
-            for (Die d : da){
-            }
+        for(int i=0; i<4; i++){
+           for (int j=0; j<4; j++){
+               this.slots[i][j] = null;
+           }
         }
-    }*/
+    }
 }
