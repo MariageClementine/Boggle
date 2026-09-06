@@ -1427,6 +1427,26 @@
 									"subViews": [
 										{
 											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGgZztqPIYdgDE=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ+B20b3K9uY="
+											},
+											"model": {
+												"$ref": "AAAAAAGgZztqNYYaVhc="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 549,
+											"top": 382,
+											"width": 215.22705078125,
+											"height": 13,
+											"underline": true,
+											"text": "#DICE_FACES: List<List<String>>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
 											"_id": "AAAAAAGgQ+CKeb3vGno=",
 											"_parent": {
 												"$ref": "AAAAAAGgQ+B20b3K9uY="
@@ -1438,10 +1458,10 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 382,
+											"top": 397,
 											"width": 215.22705078125,
 											"height": 13,
-											"text": "-slots: Dice[x][y]",
+											"text": "-slots: Die[][]",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1457,30 +1477,10 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 397,
-											"width": 215.22705078125,
-											"height": 13,
-											"text": "-dice: Dice[z]",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGgZztqPIYdgDE=",
-											"_parent": {
-												"$ref": "AAAAAAGgQ+B20b3K9uY="
-											},
-											"model": {
-												"$ref": "AAAAAAGgZztqNYYaVhc="
-											},
-											"fillColor": "#C4D6E9",
-											"font": "Arial;13;0",
-											"parentStyle": true,
-											"left": 549,
 											"top": 412,
 											"width": 215.22705078125,
 											"height": 13,
-											"underline": true,
-											"text": "#DICE_FACES: List<List<String>>",
+											"text": "-dice: Die[]",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1537,7 +1537,7 @@
 											"top": 450,
 											"width": 215.22705078125,
 											"height": 13,
-											"text": "+getSlots(): Dice",
+											"text": "+getSlots(): Die",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1575,7 +1575,7 @@
 											"top": 480,
 											"width": 215.22705078125,
 											"height": 13,
-											"text": "+getDice(): Dice",
+											"text": "+getDiceList() : Die[]()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1594,7 +1594,7 @@
 											"top": 495,
 											"width": 215.22705078125,
 											"height": 13,
-											"text": "+setDice(placeInList: int, die: Die)",
+											"text": "+setDice(pos: int, die: Die)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2857,6 +2857,18 @@
 							"attributes": [
 								{
 									"_type": "UMLAttribute",
+									"_id": "AAAAAAGgZztqNYYaVhc=",
+									"_parent": {
+										"$ref": "AAAAAAGgQ+B20b3Cu5k="
+									},
+									"name": "DICE_FACES",
+									"documentation": "Constant containing a list of all the faces (interior List) for each dice (exterior List).\n\nThe same dices are always used, just randomly positioned, thus the choice of a constant.",
+									"visibility": "protected",
+									"isStatic": true,
+									"type": "List<List<String>>"
+								},
+								{
+									"_type": "UMLAttribute",
 									"_id": "AAAAAAGgQ+CKdL3sITo=",
 									"_parent": {
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
@@ -2864,7 +2876,7 @@
 									"name": "slots",
 									"documentation": "Slots contained in the grid. They are ordered as an array of 4x4, in the default version of the grid.\n",
 									"visibility": "private",
-									"type": "Dice[x][y]"
+									"type": "Die[][]"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -2873,21 +2885,9 @@
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
 									"name": "dice",
-									"documentation": "The Dice list that will be used by the slots. The size of the list is 16, in the default version of the grid.",
+									"documentation": "The Die list that will be used by the slots. The size of the list is 16, in the default version of the grid.",
 									"visibility": "private",
-									"type": "Dice[z]"
-								},
-								{
-									"_type": "UMLAttribute",
-									"_id": "AAAAAAGgZztqNYYaVhc=",
-									"_parent": {
-										"$ref": "AAAAAAGgQ+B20b3Cu5k="
-									},
-									"name": "DICE_FACES",
-									"documentation": "Constant containing a list of each Dice's face.",
-									"visibility": "protected",
-									"isStatic": true,
-									"type": "List<List<String>>"
+									"type": "Die[]"
 								}
 							],
 							"operations": [
@@ -2915,7 +2915,9 @@
 											"_parent": {
 												"$ref": "AAAAAAGgQ+JM/L40EgM="
 											},
-											"type": "Dice",
+											"type": {
+												"$ref": "AAAAAAGgQ+HVcb3+ETs="
+											},
 											"direction": "return"
 										}
 									]
@@ -2966,19 +2968,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
-									"name": "getDice",
-									"documentation": "Getter for the \"dice\" attribute.",
-									"parameters": [
-										{
-											"_type": "UMLParameter",
-											"_id": "AAAAAAGgQ+c/uL55nWE=",
-											"_parent": {
-												"$ref": "AAAAAAGgQ+JQfL5AfiE="
-											},
-											"type": "Dice",
-											"direction": "return"
-										}
-									]
+									"name": "getDiceList() : Die[]",
+									"documentation": "Getter for the \"dice\" attribute."
 								},
 								{
 									"_type": "UMLOperation",
@@ -2987,7 +2978,7 @@
 										"$ref": "AAAAAAGgQ+B20b3Cu5k="
 									},
 									"name": "setDice",
-									"documentation": "Setter for the \"dice\" attribute. Instanciates the dices that will be used in the game.",
+									"documentation": "Setter for the \"dice\" attribute. Instanciates the dice that will be used in the game.",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
@@ -2995,7 +2986,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGgQ+JcH75HpWo="
 											},
-											"name": "placeInList",
+											"name": "pos",
 											"type": "int"
 										},
 										{
@@ -3446,5 +3437,6 @@
 			]
 		}
 	],
-	"author": "Clementine Mariage"
+	"author": "Clementine Mariage",
+	"documentVersion": 1
 }

@@ -1,6 +1,7 @@
 package c.mariage;
 
 import java.util.List;
+import c.mariage.Die;
 
 public class Grid {
     /**
@@ -25,4 +26,89 @@ public class Grid {
             List.of("E","N","H","R","I","S"),
             List.of("E","T","U","K","N","O")
     );
+
+    /**
+     * Slots contained in the grid. They are ordered as an array of 4x4, in the default version of the grid.
+     */
+    private Die[][] slots;
+
+    /**
+     * The Dice list that will be used by the slots. The size of the list is 16, in the default version of the grid.
+     */
+    private Die[] dices;
+
+    /**
+     * Default contructor, representing the grid by default (4x4 slots). Creates the "slots" Array and the Dice,
+     * then fills the "dice" attribute.
+     */
+    public Grid(){
+        // Initializing arrays size
+        this.dices = new Die[16];
+        this.slots = new Die[4][4];
+
+        //Instantiating Dice
+        for (Die d: this.DICE_FACES){
+            
+        }
+
+
+        //Instantiating slots
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Die[][] getSlots(){
+        return null;
+    }
+
+    /**
+     *
+     * @param xSlot
+     * @param ySlot
+     * @param die
+     */
+    public void setSlot (int xSlot, int ySlot, Die die){
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Die[] getDiceList(){
+        return null;
+    }
+
+    /**
+     *
+     * @param pos
+     * @param die
+     */
+    public void setDices(int pos, Die die){
+
+    }
+
+    /**
+     *
+     */
+    public void displayGrid(){
+
+    }
+
+    /**
+     *
+     */
+    public void shuffleDice(){
+
+    }
+
+    /**
+     *
+     */
+    public void resetGrid(){
+
+    }
 }
