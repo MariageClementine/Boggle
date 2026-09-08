@@ -5,9 +5,10 @@ Le concept complet est [ici](Boggle_Concept.pdf)
 ---
 
 ### Outils utilisés: 
-- ***Uml*** : StarUML
-- ***Développement*** : IntelliJ, Maven
-- ***Tests*** : JUnit
+- Version `jar` terminal :
+  - ***Uml*** : StarUML
+  - ***Développement*** : IntelliJ, Maven
+  - ***Tests*** : JUnit
   
 ---
 
