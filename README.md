@@ -1,5 +1,8 @@
 # Boggle
 Projet de développement d'une version virtuelle, en Java, du plateau de jeu Boggle ainsi que son Timer.
+
+<img src="boggle_img.jpg" width="400" alt="Boggle">
+
 Le concept complet est [ici](Boggle_Concept.pdf)
 
 ---
