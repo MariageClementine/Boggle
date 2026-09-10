@@ -2,6 +2,7 @@ package c.mariage;
 
 import c.mariage.exception.DieNotAddedException;
 import java.util.List;
+import java.util.Random;
 
 public class Grid {
     /**
@@ -30,12 +31,12 @@ public class Grid {
     /**
      * Slots contained in the grid. They are ordered as an array of 4x4, in the default version of the grid.
      */
-    private Die[][] slots;
+    private final Die[][] slots;
 
     /**
      * The Dice array that will be used by the slots. The size of the list is 16, in the default version of the grid.
      */
-    private Die[] diceArray;
+    private final Die[] diceArray;
 
     /**
      * Default constructor, representing the grid by default (4x4 slots). Creates the "slots" Array and the Dice,
@@ -119,7 +120,6 @@ public class Grid {
         else{
             this.diceArray[pos] = die;
         }
-
     }
 
     /**
@@ -134,16 +134,41 @@ public class Grid {
      */
     public void shuffleDice(){
 
+        Random ran = new Random();
+        int res;
+
+        //Going through each die in the array
+        for (Die die : this.getDiceArray()){
+
+            //as long as the dice hasn't been placed
+            while(!die.isInSlot()){
+
+                //trying the insertion
+                res = this.setSlot(ran.nextInt(4), ran.nextInt(4), die );
+
+                //if successful, stop the while loop
+                if (res == 0){
+                    die.setInSlot(true);
+                }
+            }
+        }
     }
 
     /**
      * Sets the "slots" array elements to "null".
      */
     public void resetGrid(){
+
+        //empty the slots
         for(int i=0; i<4; i++){
            for (int j=0; j<4; j++){
                this.slots[i][j] = null;
            }
+        }
+
+        // each Die is out of the slots
+        for (Die die : this.getDiceArray()){
+            die.setInSlot(false);
         }
     }
 }

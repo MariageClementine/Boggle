@@ -2,7 +2,6 @@ package c.mariage;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Random;
 
 public class Die {
@@ -18,12 +17,18 @@ public class Die {
     private String activeFace;
 
     /**
+     * Tells if the Die is set inside a grid slot or not.
+     */
+    private boolean inSlot;
+
+    /**
      * Constructor. Takes the List given in parameter and sets the attribute "faces" with the values.
      * @param listFaces the list of the Die's faces
      */
     public Die(List<String> listFaces){
 
         this.faces = new String[6];
+        this.inSlot = false;
 
         int index=0;
         Iterator<String> it = listFaces.iterator();
@@ -44,6 +49,21 @@ public class Die {
      */
     public String[] getFaces(){ return this.faces; }
 
+    /**
+     * Getter for the "inSlot" attribute.
+     * @return if the dice is in a slot or not
+     */
+    public boolean isInSlot() {
+        return this.inSlot;
+    }
+
+    /**
+     * Setter for the "inSlot" attribute. Is called by Grid.shuffleDice() and Grid.resetGrid().
+     * @param inSlot is true or false
+     */
+    public void setInSlot(boolean inSlot) {
+        this.inSlot = inSlot;
+    }
 
     /**
      * Setter. Sets randomly the active face.

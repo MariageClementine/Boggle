@@ -1691,7 +1691,7 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 647,
-											"width": 140.80712890625,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "Die"
 										},
@@ -1732,7 +1732,7 @@
 									"parentStyle": true,
 									"left": 544,
 									"top": 640,
-									"width": 150.80712890625,
+									"width": 163.84521484375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGgQ+HVcr4CEKU="
@@ -1771,7 +1771,7 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 670,
-											"width": 140.80712890625,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "-faces: String[6]",
 											"horizontalAlignment": 0
@@ -1790,9 +1790,28 @@
 											"parentStyle": true,
 											"left": 549,
 											"top": 685,
-											"width": 140.80712890625,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "-activeFace: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGgjDKFfyIeqD4=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ+HVcr4G/N0="
+											},
+											"model": {
+												"$ref": "AAAAAAGgjDKFLyIb+9I="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 549,
+											"top": 700,
+											"width": 153.84521484375,
+											"height": 13,
+											"text": "-inSlot: boolean",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1801,8 +1820,8 @@
 									"parentStyle": true,
 									"left": 544,
 									"top": 665,
-									"width": 150.80712890625,
-									"height": 38
+									"width": 163.84521484375,
+									"height": 53
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1827,8 +1846,8 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 708,
-											"width": 140.80712890625,
+											"top": 723,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "+Die(List<String>)",
 											"horizontalAlignment": 0
@@ -1846,8 +1865,8 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 723,
-											"width": 140.80712890625,
+											"top": 738,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "+getActiveFace(): String",
 											"horizontalAlignment": 0
@@ -1865,10 +1884,48 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 738,
-											"width": 140.80712890625,
+											"top": 753,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "+getFaces(): String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGgjDLDfiIl5GA=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ+HVcr4HiPw="
+											},
+											"model": {
+												"$ref": "AAAAAAGgjDLDbiIivOw="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 549,
+											"top": 768,
+											"width": 153.84521484375,
+											"height": 13,
+											"text": "+isInSlot(): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGgjDM2OyIz+jA=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ+HVcr4HiPw="
+											},
+											"model": {
+												"$ref": "AAAAAAGgjDM2LCIwE7A="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 549,
+											"top": 783,
+											"width": 153.84521484375,
+											"height": 13,
+											"text": "+setInSlot(inSlot: boolean)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1884,8 +1941,8 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 753,
-											"width": 140.80712890625,
+											"top": 798,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "+rollDie()",
 											"horizontalAlignment": 0
@@ -1903,8 +1960,8 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 549,
-											"top": 768,
-											"width": 140.80712890625,
+											"top": 813,
+											"width": 153.84521484375,
 											"height": 13,
 											"text": "+toString(): String",
 											"horizontalAlignment": 0
@@ -1914,9 +1971,9 @@
 									"font": "Arial;13;0",
 									"parentStyle": true,
 									"left": 544,
-									"top": 703,
-									"width": 150.80712890625,
-									"height": 83
+									"top": 718,
+									"width": 163.84521484375,
+									"height": 113
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1964,8 +2021,8 @@
 							"containerChangeable": true,
 							"left": 544,
 							"top": 640,
-							"width": 149.80712890625,
-							"height": 161,
+							"width": 162.84521484375,
+							"height": 191,
 							"nameCompartment": {
 								"$ref": "AAAAAAGgQ+HVcr4Bwys="
 							},
@@ -3077,6 +3134,17 @@
 									"documentation": "The face up top, which will be displayed.",
 									"visibility": "private",
 									"type": "String"
+								},
+								{
+									"_type": "UMLAttribute",
+									"_id": "AAAAAAGgjDKFLyIb+9I=",
+									"_parent": {
+										"$ref": "AAAAAAGgQ+HVcb3+ETs="
+									},
+									"name": "inSlot",
+									"documentation": "Tells if the Die is set inside a grid slot or not.\n",
+									"visibility": "private",
+									"type": "boolean"
 								}
 							],
 							"operations": [
@@ -3137,6 +3205,46 @@
 											},
 											"type": "String",
 											"direction": "return"
+										}
+									]
+								},
+								{
+									"_type": "UMLOperation",
+									"_id": "AAAAAAGgjDLDbiIivOw=",
+									"_parent": {
+										"$ref": "AAAAAAGgQ+HVcb3+ETs="
+									},
+									"name": "isInSlot",
+									"documentation": "Getter for the \"inSlot\" attribute.",
+									"parameters": [
+										{
+											"_type": "UMLParameter",
+											"_id": "AAAAAAGgjDLp3SIpXcY=",
+											"_parent": {
+												"$ref": "AAAAAAGgjDLDbiIivOw="
+											},
+											"type": "boolean",
+											"direction": "return"
+										}
+									]
+								},
+								{
+									"_type": "UMLOperation",
+									"_id": "AAAAAAGgjDM2LCIwE7A=",
+									"_parent": {
+										"$ref": "AAAAAAGgQ+HVcb3+ETs="
+									},
+									"name": "setInSlot",
+									"documentation": "Setter for the \"inSlot\" attribute. Is called by Grid.shuffleDice() and Grid.resetGrid().",
+									"parameters": [
+										{
+											"_type": "UMLParameter",
+											"_id": "AAAAAAGgjDOCPiI35ZA=",
+											"_parent": {
+												"$ref": "AAAAAAGgjDM2LCIwE7A="
+											},
+											"name": "inSlot",
+											"type": "boolean"
 										}
 									]
 								},

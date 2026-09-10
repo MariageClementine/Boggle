@@ -59,4 +59,24 @@ class GridTest {
         //trying a filled slot
         assertEquals(1,this.grid.setSlot(0,0,this.firstDie));
     }
+
+    @Test
+    public void resetGridTest(){
+        //populate
+        this.grid.setSlot(1,2,this.firstDie);
+        this.grid.setSlot(3,0,this.lastDie);
+
+        //reset
+        this.grid.resetGrid();
+
+        //test
+        assertNull(this.grid.getSlots()[1][2]);
+        assertNull(this.grid.getSlots()[3][0]);
+    }
+
+    /*  Since shuffleDice uses Random a lot, the test will be a display of the grid. It will test shuffleDice and displayGrid both at the same time */
+    @Test
+    public void shuffleAndDisplayTest(){
+
+    }
 }
