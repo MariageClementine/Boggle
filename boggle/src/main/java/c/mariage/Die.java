@@ -1,6 +1,5 @@
 package c.mariage;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -31,9 +30,8 @@ public class Die {
         this.inSlot = false;
 
         int index=0;
-        Iterator<String> it = listFaces.iterator();
-        while(it.hasNext()){
-            this.faces[index] = it.next();
+        for (String listFace : listFaces) {
+            this.faces[index] = listFace;
             index++;
         }
     }
@@ -84,7 +82,7 @@ public class Die {
     public String toString(){
         String res = "";
         for (String letter: this.faces){
-            res+= letter+" ";
+            res += letter+" ";
         }
         return res;
     }
