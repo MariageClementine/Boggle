@@ -77,6 +77,9 @@ class GridTest {
     /*  Since shuffleDice uses Random a lot, the test will be a display of the grid. It will test shuffleDice and displayGrid both at the same time */
     @Test
     public void shuffleAndDisplayTest(){
-
+        this.grid.shuffleDice();
+        System.out.println(this.grid.toString());
+        //make sure the dices are randomized
+        System.out.println(this.grid.getSlots()[0][0].toString());
     }
 }

@@ -5,6 +5,13 @@ import java.util.List;
 import java.util.Random;
 
 public class Grid {
+
+    /**
+     * Colours used in the terminal for better visual.
+     */
+    private static final String RESET_COLOUR = "\u001B[0m";
+    private static final String BACKGROUND_COLOUR ="\u001B[48;2;160;160;160m\u001B[30m";
+
     /**
      *  Lists all the faces (interior List) for each dice (exterior List).
      *  The same dices are always used, just randomly positioned, thus the choice of a constant.
@@ -123,10 +130,41 @@ public class Grid {
     }
 
     /**
-     * Displays the grid, in an array of 4x4 on the terminal. The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
+     * Returns a string representing a Grid to be displayed.
+     * The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
+     * @return the String representing the Grid with letters in the slots.
      */
-    public void displayGrid(){
+    @Override
+    public String toString(){
 
+        //Trying StringBuilder
+        StringBuilder str = new StringBuilder();
+
+        //Trying Unicode, for a cleaner Grid
+        String topLine =    BACKGROUND_COLOUR+ "┌───┬───┬───┬───┐" + RESET_COLOUR + "\n";
+        String midLine =    BACKGROUND_COLOUR+ "├───┼───┼───┼───┤" + RESET_COLOUR + "\n";
+        String bottomLine = BACKGROUND_COLOUR+ "└───┴───┴───┴───┘" + RESET_COLOUR + "\n";
+
+        //and trying colours, while we're at it
+
+        str.append(topLine);
+
+        for (int i=0; i < 4; i++){
+            str.append(BACKGROUND_COLOUR).append("|").append(RESET_COLOUR);
+
+            for (int j=0; j< 4; j++){
+                str.append(BACKGROUND_COLOUR+ " ").append(this.getSlots()[i][j].getActiveFace());
+                str.append(" |"+RESET_COLOUR);
+            }
+
+            str.append("\n");
+
+            if(i!=3) {
+                str.append(midLine);
+            }
+        }
+        str.append(bottomLine);
+        return str.toString();
     }
 
     /**
@@ -146,8 +184,12 @@ public class Grid {
                 //trying the insertion
                 res = this.setSlot(ran.nextInt(4), ran.nextInt(4), die );
 
-                //if successful, stop the while loop
+                //if successful
                 if (res == 0){
+                    //choose an active face
+                    die.rollDie();
+
+                    //stop the loop
                     die.setInSlot(true);
                 }
             }
