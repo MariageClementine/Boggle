@@ -16,10 +16,10 @@ public class GameManager {
     /**
      * Colours used in the terminal for better visual.
      */
-    private static final String WARNING_COLOUR = "\u001B[31m";
+    private static final String WARNING_COLOUR = "\u001B[38;2;181;9;9m";
     protected static final String RESET_COLOUR = "\u001B[0m";
     protected static final String GRID_COLOUR = "\u001B[48;2;160;160;160m\u001B[30m";
-    protected static final String TIMER_OFF_COLOUR = "";
+    protected static final String TIMER_OFF_COLOUR = "\u001B[48;2;160;160;160m\u001B[38;2;181;9;9m";
 
     /**
      * Constructor.

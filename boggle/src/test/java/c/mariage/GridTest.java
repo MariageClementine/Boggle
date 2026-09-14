@@ -78,8 +78,10 @@ class GridTest {
     @Test
     public void shuffleAndDisplayTest(){
         this.grid.shuffleDice();
-        System.out.println(this.grid.toString());
+        System.out.println(this.grid.toString("\u001B[48;2;160;160;160m\u001B[30m"));
         //make sure the dices are randomized
         System.out.println(this.grid.getSlots()[0][0].toString());
+        //Testing grid display after timer ran out
+        System.out.println(this.grid.toString("\u001B[48;2;160;160;160m\u001B[38;2;181;9;9m"));
     }
 }
