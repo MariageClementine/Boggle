@@ -3976,8 +3976,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
 											},
-											"name": "GameManager",
-											"documentation": "Constructor. Initiates the menu display.\n"
+											"name": "GameManager"
 										},
 										{
 											"_type": "UMLOperation",
