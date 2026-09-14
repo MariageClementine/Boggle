@@ -6,11 +6,7 @@ import java.util.Random;
 
 public class Grid {
 
-    /**
-     * Colours used in the terminal for better visual.
-     */
-    private static final String RESET_COLOUR = "\u001B[0m";
-    private static final String BACKGROUND_COLOUR ="\u001B[48;2;160;160;160m\u001B[30m";
+
 
     /**
      *  Lists all the faces (interior List) for each dice (exterior List).
@@ -134,27 +130,26 @@ public class Grid {
      * The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
      * @return the String representing the Grid with letters in the slots.
      */
-    @Override
-    public String toString(){
+    public String toString(String colour){
 
         //Trying StringBuilder
         StringBuilder str = new StringBuilder();
 
         //Trying Unicode, for a cleaner Grid
-        String topLine =    BACKGROUND_COLOUR+ "┌───┬───┬───┬───┐" + RESET_COLOUR + "\n";
-        String midLine =    BACKGROUND_COLOUR+ "├───┼───┼───┼───┤" + RESET_COLOUR + "\n";
-        String bottomLine = BACKGROUND_COLOUR+ "└───┴───┴───┴───┘" + RESET_COLOUR + "\n";
+        String topLine =    colour + "┌───┬───┬───┬───┐" + GameManager.RESET_COLOUR + "\n";
+        String midLine =    colour + "├───┼───┼───┼───┤" + GameManager.RESET_COLOUR + "\n";
+        String bottomLine = colour + "└───┴───┴───┴───┘" + GameManager.RESET_COLOUR + "\n";
 
         //and trying colours, while we're at it
 
         str.append(topLine);
 
         for (int i=0; i < 4; i++){
-            str.append(BACKGROUND_COLOUR).append("|").append(RESET_COLOUR);
+            str.append(colour).append("|").append(GameManager.RESET_COLOUR);
 
             for (int j=0; j< 4; j++){
-                str.append(BACKGROUND_COLOUR+ " ").append(this.getSlots()[i][j].getActiveFace());
-                str.append(" |"+RESET_COLOUR);
+                str.append(colour).append(" ").append(this.getSlots()[i][j].getActiveFace());
+                str.append(" |" + GameManager.RESET_COLOUR);
             }
 
             str.append("\n");

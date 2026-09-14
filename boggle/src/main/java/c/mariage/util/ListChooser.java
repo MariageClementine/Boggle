@@ -6,7 +6,6 @@ public class ListChooser<T> {
 
     /**
      * Class created for the Olympus project. Since it's useful, I am re-using it here.
-     *
      * Allows one to choose an item from a list of items of type T.
      * If the list of items is empty, null is returned.
      * The list of items is presented as numbers followed by the

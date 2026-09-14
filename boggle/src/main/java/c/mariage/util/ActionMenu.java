@@ -2,7 +2,18 @@ package c.mariage.util;
 
 public enum ActionMenu {
 
-    DISPLAY_RULES,
-    PLAY_GAME,
-    EXIT;
+    EXIT(0),
+    PLAY_GAME(1),
+    DISPLAY_RULES(2);
+
+
+    private final int code;
+
+    ActionMenu(int code){
+        this.code= code;
+    }
+
+
+
+
 }
