@@ -1,6 +1,6 @@
-package c.mariage;
+package com.boggle;
 
-import c.mariage.exception.DieNotAddedException;
+import com.boggle.exception.DieNotAddedException;
 import java.util.List;
 import java.util.Random;
 
@@ -139,8 +139,6 @@ public class Grid {
         String topLine =    colour + "┌───┬───┬───┬───┐" + GameManager.RESET_COLOUR + "\n";
         String midLine =    colour + "├───┼───┼───┼───┤" + GameManager.RESET_COLOUR + "\n";
         String bottomLine = colour + "└───┴───┴───┴───┘" + GameManager.RESET_COLOUR + "\n";
-
-        //and trying colours, while we're at it
 
         str.append(topLine);
 

@@ -1,6 +1,8 @@
-package c.mariage;
+package com.boggle;
 
-import c.mariage.exception.DieNotAddedException;
+import com.boggle.Die;
+import com.boggle.Grid;
+import com.boggle.exception.DieNotAddedException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

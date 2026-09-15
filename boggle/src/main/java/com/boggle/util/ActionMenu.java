@@ -1,4 +1,4 @@
-package c.mariage.util;
+package com.boggle.util;
 
 public enum ActionMenu {
 

@@ -645,7 +645,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 656,
-									"top": 436,
+									"top": 443,
 									"width": 53.11083984375,
 									"height": 13,
 									"alpha": 1.6633145408832668,
@@ -669,7 +669,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 677,
-									"top": 439,
+									"top": 446,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -691,7 +691,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 633,
-									"top": 440,
+									"top": 447,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -710,7 +710,7 @@
 								"$ref": "AAAAAAGgQ9vXSL0JK34="
 							},
 							"lineStyle": 2,
-							"points": "648:420;648:472",
+							"points": "648:435;648:472",
 							"nameLabel": {
 								"$ref": "AAAAAAGgRCG4L8Ll768="
 							},
@@ -2780,6 +2780,25 @@
 										},
 										{
 											"_type": "UMLOperationView",
+											"_id": "AAAAAAGgpxmBuqOA7Mo=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ9vXSb0QcG4="
+											},
+											"model": {
+												"$ref": "AAAAAAGgpxmBraN94NM="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 573,
+											"top": 327,
+											"width": 217.7470703125,
+											"height": 13,
+											"text": "+getGrid(): Grid",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
 											"_id": "AAAAAAGgotDxTttzVhY=",
 											"_parent": {
 												"$ref": "AAAAAAGgQ9vXSb0QcG4="
@@ -2791,7 +2810,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 573,
-											"top": 327,
+											"top": 342,
 											"width": 217.7470703125,
 											"height": 13,
 											"text": "+displayMenu(): int",
@@ -2810,7 +2829,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 573,
-											"top": 342,
+											"top": 357,
 											"width": 217.7470703125,
 											"height": 13,
 											"text": "+chooseDfficulty(): int",
@@ -2829,7 +2848,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 573,
-											"top": 357,
+											"top": 372,
 											"width": 217.7470703125,
 											"height": 13,
 											"text": "+displayRules()",
@@ -2848,7 +2867,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 573,
-											"top": 372,
+											"top": 387,
 											"width": 217.7470703125,
 											"height": 13,
 											"text": "+playGame()",
@@ -2867,7 +2886,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 573,
-											"top": 387,
+											"top": 402,
 											"width": 217.7470703125,
 											"height": 13,
 											"text": "+displayGrid(timeOff: boolean)",
@@ -2886,7 +2905,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 573,
-											"top": 402,
+											"top": 417,
 											"width": 217.7470703125,
 											"height": 13,
 											"text": "+displayTimer(warning: boolean)",
@@ -2899,7 +2918,7 @@
 									"left": 568,
 									"top": 307,
 									"width": 227.7470703125,
-									"height": 113
+									"height": 128
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -2948,7 +2967,7 @@
 							"left": 568,
 							"top": 184,
 							"width": 226.7470703125,
-							"height": 236,
+							"height": 251,
 							"nameCompartment": {
 								"$ref": "AAAAAAGgQ9vXSb0KOkc="
 							},
@@ -4359,6 +4378,28 @@
 										},
 										{
 											"_type": "UMLOperation",
+											"_id": "AAAAAAGgpxmBraN94NM=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ9vXSL0HKyU="
+											},
+											"name": "getGrid",
+											"documentation": "returns the created Grid",
+											"parameters": [
+												{
+													"_type": "UMLParameter",
+													"_id": "AAAAAAGgpxmX0qOEm0o=",
+													"_parent": {
+														"$ref": "AAAAAAGgpxmBraN94NM="
+													},
+													"type": {
+														"$ref": "AAAAAAGgQ+B20b3Cu5k="
+													},
+													"direction": "return"
+												}
+											]
+										},
+										{
+											"_type": "UMLOperation",
 											"_id": "AAAAAAGgotDxQNtwfJU=",
 											"_parent": {
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
@@ -4404,7 +4445,7 @@
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
 											},
 											"name": "displayRules",
-											"documentation": "Displays the Boggle rules to the user. Waits for any input to go back to the menu."
+											"documentation": "Displays the Boggle rules to the user, using ANSI formatting.\n"
 										},
 										{
 											"_type": "UMLOperation",

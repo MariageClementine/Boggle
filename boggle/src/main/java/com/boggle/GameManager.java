@@ -1,15 +1,22 @@
-package c.mariage;
+package com.boggle;
 
 
-import c.mariage.util.Difficulty;
-import c.mariage.util.Input;
+import com.boggle.util.Difficulty;
+import com.boggle.util.Input;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.stream.Collectors;
 
 public class GameManager {
 
     /**
      * The grid for the game. Contains an instantiation of the Grid object once startGame() has been called. Contains null otherwise.
      */
-    private Grid grid;
+    private final Grid grid;
 
     /**
      * The chosen difficulty, affecting the time of a match.
@@ -29,8 +36,16 @@ public class GameManager {
      * Constructor.
      */
     public GameManager(){
-        this.grid = null;
+        this.grid = new Grid();
         this.chosenDifficulty = null;
+    }
+
+    /**
+     * Getter for the "grid " attribute.
+     * @return the created Grid
+     */
+    public Grid getGrid(){
+        return this.grid;
     }
 
     /**
@@ -61,7 +76,7 @@ public class GameManager {
 
             try {
                 choice = Input.readInt();
-            } catch (java.io.IOException e) {
+            } catch (IOException e) {
                 System.out.println("Please, enter a number between 1 and " + (index-1));
             }
             if (choice == 0){
@@ -74,17 +89,31 @@ public class GameManager {
     }
 
     /**
-     * Displays the Boggle rules to the user. Waits for any input to go back to the menu.
+     * Displays the Boggle rules to the user, using ANSI formatting.
+     *
      */
     public void displayRules(){
+        InputStream inStr = getClass().getClassLoader().getResourceAsStream("Rules.txt");
 
+        if (inStr == null){
+            throw new IllegalArgumentException("Rules file not found.");
+        }
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inStr, StandardCharsets.UTF_8))) {
+            String res =  reader.lines().collect(Collectors.joining("\n"));
+            System.out.println(res.replace("\\u001B","\u001B"));
+
+        } catch( Exception e){
+            System.out.println("Error while reading the rules file: "+e.getMessage());
+            System.exit(1);
+        }
     }
 
     /**
      * Manages a game: the display of the Timer, the message and the Grid.
      */
     public void playGame() {
-        this.grid = new Grid();
+
     }
 
 
@@ -92,6 +121,9 @@ public class GameManager {
      * Displays the grid, in an array of 4x4 on the terminal. The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
      */
     public void displayGrid(boolean timeOff) {
+
+        String col = (timeOff) ? GameManager.TIMER_OFF_COLOUR : GameManager.GRID_COLOUR;
+        System.out.println(this.grid.toString(col));
     }
 
 

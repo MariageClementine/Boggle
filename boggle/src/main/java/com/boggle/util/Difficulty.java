@@ -1,4 +1,4 @@
-package c.mariage.util;
+package com.boggle.util;
 
 public enum Difficulty {
     EASY(300,5),    //5 minutes

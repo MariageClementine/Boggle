@@ -1,4 +1,4 @@
-package c.mariage;
+package com.boggle;
 
 import java.util.List;
 import java.util.Random;

@@ -37,8 +37,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <!-- ⚠️ Remplacer par le package + le nom de votre classe contenant le main() -->
-                            <mainClass>c.mariage.Main</mainClass>
+                            <mainClass>com.boggle.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
