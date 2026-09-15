@@ -1,0 +1,30 @@
+*** \u001B[1m\u001B[4mRules for the classic version of Boggle:\u001B[0m ****
+
+16 dice with letters on their faces are contained in a 4x4 grid. When the game session starts, the dice are shuffled and place randomly in that grid, then displayed to you.
+The goal is to find and write down the maximum amount of words, the most lengthy possible, by forming strings of adjacent characters.
+Once the timer has stopped, each player stops writing and counts their points. The player with the most points wins.
+You only have a few minutes to do so, so keep an eye on the timer!
+
+** \u001B[1m\u001B[4mThe specific rules\u001B[0m **
+- Characters can be linked from the left, right, top, bottom, or diagonally.
+- The words you find must at least have 3 letters.
+- Any word, singular or plural and with any conjugation is allowed, as long as you can find it in the dictionary.
+- For the languages that use accents: E can be considered as É, È, Ê, and so on...
+- Proper nouns are not allowed.
+- One letter cannot be used multiple times for the same word.
+- Words inside other words are allowed (if a player finds "bought", they can also write "ought").
+- Homonyms only count as 1 word.
+- A same word found at different places in the grid cannot count multiple times.
+- It is possible, if the players wish so, to consider that the letter "Q" also counts as "QU".
+- A singular version of a word can be written in addition to its plural version, \u001B[1mIF\u001B[0m the player wrote down \u001B[1mBOTH\u001B[0m (the same goes for conjugation).
+- \u001B[4m\u001B[31m/!\\u001B[0mIf multiple players have found the same word, points \u001B[1mARE NOT GIVEN\u001B[0m for this word!
+
+** \u001B[1m\u001B[4mPoints\u001B[0m **
+- 3 or 4 letters __ : 1 point
+- 5 letters _______ : 2 points
+- 6 letters _______ : 3 points
+- 7 letters _______ : 5 points
+- 8 letters or more : 11 points
+
+Enjoy the game!
+(Press any key to return to the Menu)
