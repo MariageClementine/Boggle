@@ -1,6 +1,9 @@
 package c.mariage;
 
 
+import c.mariage.util.Difficulty;
+import c.mariage.util.Input;
+
 public class GameManager {
 
     /**
@@ -11,7 +14,8 @@ public class GameManager {
     /**
      * The chosen difficulty, affecting the time of a match.
      */
-    private int ChosenDifficulty;
+    private Difficulty chosenDifficulty;
+
 
     /**
      * Colours used in the terminal for better visual.
@@ -26,14 +30,34 @@ public class GameManager {
      */
     public GameManager(){
         this.grid = new Grid();
+        this.chosenDifficulty =  this.chooseDifficulty();
     }
 
     /**
      * Asks the user for the difficulty of the game. A higher difficulty means less time on the timer.
      * @return the number corresponding to the chosen difficulty
      */
-    public int chooseDifficulty(){
-        return 0;
+    public Difficulty chooseDifficulty(){
+
+        // shows the items until the user made a valid choice
+        int choice = -1;
+        while ((choice < 0) || (choice > Difficulty.values().length)) {
+            System.out.println("Please chose the difficulty of the game:");
+            int index = 1;
+
+            for (Difficulty diff : Difficulty.values()) {
+                System.out.println("  " + (index++) + " - " + diff.toString()+" ("+diff.getMinutes()+" minutes)");
+            }
+            System.out.println("  Choose 0 to return to the Menu.\n");
+            System.out.println("*_____ What is your choice ? _____*");
+
+            try {
+                choice = Input.readInt();
+            } catch (java.io.IOException e) {
+                System.out.println("Please, enter a number between 0 and " + (index));
+            }
+        }
+        return Difficulty.values()[choice-1];
     }
 
     /**
