@@ -29,15 +29,23 @@ public class GameManager {
      * Constructor.
      */
     public GameManager(){
-        this.grid = new Grid();
-        this.chosenDifficulty =  this.chooseDifficulty();
+        this.grid = null;
+        this.chosenDifficulty = null;
     }
 
     /**
-     * Asks the user for the difficulty of the game. A higher difficulty means less time on the timer.
-     * @return the number corresponding to the chosen difficulty
+     * Displays a list of the different actions possible (Action Menu enum).
+     * @return -1 if the user wants to exit the program, an int otherwise
      */
-    public Difficulty chooseDifficulty(){
+    public int displayMenu(){
+        return 0;
+    }
+
+    /**
+     * Asks the user for the difficulty of the game. A higher difficulty means less time on the timer. Registers the answer in the "chosenDifficulty" attribute.
+     * @return -1 if the user wants to return to the menu, 0 if they chose a difficulty.
+     */
+    public int chooseDifficulty(){
 
         // shows the items until the user made a valid choice
         int choice = -1;
@@ -54,17 +62,29 @@ public class GameManager {
             try {
                 choice = Input.readInt();
             } catch (java.io.IOException e) {
-                System.out.println("Please, enter a number between 0 and " + (index));
+                System.out.println("Please, enter a number between 1 and " + (index-1));
+            }
+            if (choice == 0){
+                return -1;
             }
         }
-        return Difficulty.values()[choice-1];
+        this.chosenDifficulty = Difficulty.values()[choice-1];
+        return 0;
+
+    }
+
+    /**
+     * Displays the Boggle rules to the user. Waits for any input to go back to the menu.
+     */
+    public void displayRules(){
+
     }
 
     /**
      * Manages a game: the display of the Timer, the message and the Grid.
      */
     public void playGame() {
-
+        this.grid = new Grid();
     }
 
 
