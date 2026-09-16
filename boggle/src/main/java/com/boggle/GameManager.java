@@ -1,6 +1,7 @@
 package com.boggle;
 
 
+import com.boggle.util.ActionMenu;
 import com.boggle.util.Difficulty;
 import com.boggle.util.Input;
 
@@ -52,8 +53,24 @@ public class GameManager {
      * Displays a list of the different actions possible (Action Menu enum).
      * @return -1 if the user wants to exit the program, an int otherwise
      */
-    public int displayMenu(){
-        return 0;
+    public ActionMenu displayMenu(){
+        int choice = -1;
+        while ((choice < 0) || (choice > ActionMenu.values().length)) {
+            System.out.println("Please chose an option in the menu (enter a number): ");
+            int index = 0;
+
+            for (ActionMenu act : ActionMenu.values()) {
+                System.out.println("  " + (index++) + " - " + act.name());
+            }
+            System.out.println("*_____ What is your choice ? _____*");
+
+            try {
+                choice = Input.readInt();
+            } catch (IOException e) {
+                System.out.println("Please, enter a number between 1 and " + (index-1));
+            }
+        }
+        return ActionMenu.values()[choice];
     }
 
     /**
