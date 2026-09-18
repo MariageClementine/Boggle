@@ -23,5 +23,6 @@ Le concept complet est [ici](Boggle_Concept.pdf)
 - ***09/09/2026*** : Rédaction des tests pour la classe `Grid`; les tests réussissent. 
 - ***11/09/2026*** : Réflexions sur les mises en place d'énums et de la classe `GameManager`.
 - ***14/09/2026*** : Début de la rédaction de la classe `GameManager`.
+- ***18/09/2026*** : Refonte de `GameManager`: ses responsabilités d'affichage ne nécessitant pas d'interactions ont été déléguées à une nouvelle classe: `TerminalDisplay`.
 
 _Pour constater l'évolution dans les détails, j'ai fait en sorte de rendre mes commits le plus clair possible_
