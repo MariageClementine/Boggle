@@ -67,16 +67,32 @@ public class TerminalDisplay {
     /**
      * Manages the timer.
      */
-    public void startTimer() {
+    public void startTimer(int duration) {
 
     }
 
     /**
      * Displays the timer. Formatted in red if there are 10 seconds left.
-     * @param colour either black or red, depending on the amount of time left on the Timer.
+     * @param secondsLeft the seconds that have to be formatted to be displayed
      */
-    public void displayTimer(String colour){
+    public void displayTimer(int secondsLeft){
+        int min = secondsLeft / 60;
+        int secs = secondsLeft % 60;
+        String col = "";
+        String strMin = "";
+        String strSec = "";
 
+        if(min<10){
+            strMin = "0"+ String.valueOf(min);
+        }
+        if(secs < 10){
+            strSec = "0" + String.valueOf(secs);
+        }
+
+        if(min == 0 && secs <= 10){
+            col = TerminalDisplay.GRID_COLOUR;
+        }
+        System.out.println(col + strMin + " : " + strSec + TerminalDisplay.RESET_COLOUR);
     }
 
     /**

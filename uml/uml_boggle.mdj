@@ -3728,7 +3728,7 @@
 											"top": 556,
 											"width": 239.05615234375,
 											"height": 13,
-											"text": "+displayTimer(colour: String)",
+											"text": "+displayTimer(secondsLeft: int)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4998,8 +4998,8 @@
 													"_parent": {
 														"$ref": "AAAAAAGgsiu6WVXFp9U="
 													},
-													"name": "colour",
-													"type": "String"
+													"name": "secondsLeft",
+													"type": "int"
 												}
 											]
 										},
@@ -5040,5 +5040,6 @@
 			]
 		}
 	],
-	"author": "Clementine Mariage"
+	"author": "Clementine Mariage",
+	"documentVersion": 1
 }
