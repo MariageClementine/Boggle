@@ -1,6 +1,7 @@
 package com.boggle;
 
 import com.boggle.exception.DieNotAddedException;
+
 import java.util.List;
 import java.util.Random;
 
@@ -136,18 +137,18 @@ public class Grid {
         StringBuilder str = new StringBuilder();
 
         //Trying Unicode, for a cleaner Grid
-        String topLine =    colour + "┌───┬───┬───┬───┐" + GameManager.RESET_COLOUR + "\n";
-        String midLine =    colour + "├───┼───┼───┼───┤" + GameManager.RESET_COLOUR + "\n";
-        String bottomLine = colour + "└───┴───┴───┴───┘" + GameManager.RESET_COLOUR + "\n";
+        String topLine =    colour + "┌───┬───┬───┬───┐" + TerminalDisplay.RESET_COLOUR + "\n";
+        String midLine =    colour + "├───┼───┼───┼───┤" + TerminalDisplay.RESET_COLOUR + "\n";
+        String bottomLine = colour + "└───┴───┴───┴───┘" + TerminalDisplay.RESET_COLOUR + "\n";
 
         str.append(topLine);
 
         for (int i=0; i < 4; i++){
-            str.append(colour).append("|").append(GameManager.RESET_COLOUR);
+            str.append(colour).append("|").append(TerminalDisplay.RESET_COLOUR);
 
             for (int j=0; j< 4; j++){
                 str.append(colour).append(" ").append(this.getSlots()[i][j].getActiveFace());
-                str.append(" |" + GameManager.RESET_COLOUR);
+                str.append(" |" + TerminalDisplay.RESET_COLOUR);
             }
 
             str.append("\n");

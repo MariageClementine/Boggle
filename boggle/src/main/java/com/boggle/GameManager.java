@@ -4,13 +4,7 @@ package com.boggle;
 import com.boggle.util.ActionMenu;
 import com.boggle.util.Difficulty;
 import com.boggle.util.Input;
-
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.stream.Collectors;
 
 public class GameManager {
 
@@ -24,14 +18,10 @@ public class GameManager {
      */
     private Difficulty chosenDifficulty;
 
-
     /**
-     * Colours used in the terminal for better visual.
+     *
      */
-    private static final String WARNING_COLOUR = "\u001B[38;2;181;9;9m";
-    protected static final String RESET_COLOUR = "\u001B[0m";
-    protected static final String GRID_COLOUR = "\u001B[48;2;160;160;160m\u001B[30m";
-    protected static final String TIMER_OFF_COLOUR = "\u001B[48;2;160;160;160m\u001B[38;2;181;9;9m";
+    private TerminalDisplay td;
 
     /**
      * Constructor.
@@ -106,47 +96,23 @@ public class GameManager {
     }
 
     /**
-     * Displays the Boggle rules to the user, using ANSI formatting.
      *
      */
-    public void displayRules(){
-        InputStream inStr = getClass().getClassLoader().getResourceAsStream("Rules.txt");
+    public void startGame() {
+        int diff = this.chooseDifficulty();
 
-        if (inStr == null){
-            throw new IllegalArgumentException("Rules file not found.");
+        //in case we have to return to the menu
+        if (diff == -1) {
+            this.displayMenu();
+        } else {
+
+            //Starting the display
+            this.td = new TerminalDisplay(this.grid,this.chosenDifficulty.getSeconds());
+
+            //using the TerminalDisplay
+
+            //setting the grid for a session
+            this.getGrid().shuffleDice();
         }
-
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inStr, StandardCharsets.UTF_8))) {
-            String res =  reader.lines().collect(Collectors.joining("\n"));
-            System.out.println(res.replace("\\u001B","\u001B"));
-
-        } catch( Exception e){
-            System.out.println("Error while reading the rules file: "+e.getMessage());
-            System.exit(1);
-        }
     }
-
-    /**
-     * Manages a game: the display of the Timer, the message and the Grid.
-     */
-    public void playGame() {
-
-    }
-
-
-    /**
-     * Displays the grid, in an array of 4x4 on the terminal. The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
-     */
-    public void displayGrid(boolean timeOff) {
-
-        String col = (timeOff) ? GameManager.TIMER_OFF_COLOUR : GameManager.GRID_COLOUR;
-        System.out.println(this.grid.toString(col));
-    }
-
-
-
-    public void displayTimer(boolean warning){
-
-    }
-
 }
