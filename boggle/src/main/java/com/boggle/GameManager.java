@@ -107,7 +107,8 @@ public class GameManager {
         } else {
 
             //Starting the display
-            this.td = new TerminalDisplay(this.grid,this.chosenDifficulty.getSeconds());
+            this.td = new TerminalDisplay(this.grid);
+            this.td.setSeconds(this.chosenDifficulty.getSeconds());
 
             //using the TerminalDisplay
 

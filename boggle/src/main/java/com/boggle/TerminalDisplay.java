@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.stream.Collectors;
 
 public class TerminalDisplay {
@@ -26,13 +28,25 @@ public class TerminalDisplay {
      */
     private int seconds;
 
+    /**
+     * The timer that will be used in the game.
+     */
+    private Timer timer;
+
 
     /**
      * Constructor.
      */
-    public TerminalDisplay(Grid grid, int seconds){
+    public TerminalDisplay(Grid grid){
         this.grid = grid;
-        this.seconds = seconds;
+        this.timer = new Timer();
+    }
+
+    /**
+     *
+     */
+    public void setSeconds(int secs){
+        this.seconds = secs;
     }
 
     /**
@@ -65,13 +79,6 @@ public class TerminalDisplay {
     }
 
     /**
-     * Manages the timer.
-     */
-    public void startTimer(int duration) {
-
-    }
-
-    /**
      * Displays the timer. Formatted in red if there are 10 seconds left.
      * @param secondsLeft the seconds that have to be formatted to be displayed
      */
@@ -90,15 +97,58 @@ public class TerminalDisplay {
         }
 
         if(min == 0 && secs <= 10){
+            col = TerminalDisplay.TIMER_OFF_COLOUR;
+        }
+        else {
             col = TerminalDisplay.GRID_COLOUR;
         }
         System.out.println(col + strMin + " : " + strSec + TerminalDisplay.RESET_COLOUR);
     }
 
     /**
+     *
+     * @param secondsLeft
+     */
+    public void displayMessage(int secondsLeft){
+        if(secondsLeft>10){
+            System.out.println(TerminalDisplay.GRID_COLOUR+ " Let's Go!"+TerminalDisplay.RESET_COLOUR);
+        }
+        else if (secondsLeft <= 10 && secondsLeft > 0){
+            System.out.println(TerminalDisplay.WARNING_COLOUR+ "10 seconds left!"+TerminalDisplay.RESET_COLOUR);
+        }
+        else{
+            System.out.println(TerminalDisplay.TIMER_OFF_COLOUR + "Time's Up!"+TerminalDisplay.RESET_COLOUR);
+        }
+    }
+
+    /**
      * Displays a game session: the display of the Timer, the message and the Grid.
      */
     public void displayGame() {
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                /* *******
+                \x1B[NF Goes back to the beginning of the N-th previous line
+                 ********** */
 
+                // display
+                displayMessage(seconds);
+                // if time is up
+                if(seconds == 0){
+                    displayGrid(true);
+                    timer.cancel();
+                }
+                else {
+                    displayGrid(false);
+                }
+                displayTimer(seconds);
+
+                //decrease secs left
+                seconds --;
+
+            }
+        };
+        timer.scheduleAtFixedRate(task, 0, 1000);
     }
 }

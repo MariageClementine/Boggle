@@ -3695,25 +3695,6 @@
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAGgsiuX6VXBs7U=",
-											"_parent": {
-												"$ref": "AAAAAAGgsibIDFUpZ/I="
-											},
-											"model": {
-												"$ref": "AAAAAAGgsiuX5VW+2OI="
-											},
-											"fillColor": "#C4D6E9",
-											"font": "Arial;13;0",
-											"parentStyle": true,
-											"left": 1085,
-											"top": 541,
-											"width": 239.05615234375,
-											"height": 13,
-											"text": "+startTimer()",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAGgsiu6XVXI/vg=",
 											"_parent": {
 												"$ref": "AAAAAAGgsibIDFUpZ/I="
@@ -3725,7 +3706,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 1085,
-											"top": 556,
+											"top": 541,
 											"width": 239.05615234375,
 											"height": 13,
 											"text": "+displayTimer(secondsLeft: int)",
@@ -3744,7 +3725,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 1085,
-											"top": 571,
+											"top": 556,
 											"width": 239.05615234375,
 											"height": 13,
 											"text": "+displayGame()",
@@ -3757,7 +3738,7 @@
 									"left": 1080,
 									"top": 491,
 									"width": 249.05615234375,
-									"height": 98
+									"height": 83
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -4973,15 +4954,6 @@
 													"type": "boolean"
 												}
 											]
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAGgsiuX5VW+2OI=",
-											"_parent": {
-												"$ref": "AAAAAAGgsibIDFUgWp8="
-											},
-											"name": "startTimer",
-											"documentation": "Manages the timer."
 										},
 										{
 											"_type": "UMLOperation",
