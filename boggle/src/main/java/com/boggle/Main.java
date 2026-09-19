@@ -12,8 +12,6 @@ public class Main {
         System.out.println("Before playing, please make sure that your terminal is configured with utf-8 encoding.\nThis is to avoid any display error.\n");
 
         GameManager gm = new GameManager();
-        ActionMenu res = gm.displayMenu();
-        System.out.println(res.name());
 
     }
 

@@ -71,18 +71,20 @@ public class TerminalDisplay {
 
     /**
      * Displays the grid, in an array of 4x4 on the terminal. The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
+     * @return
      */
-    public void displayGrid(boolean timeOff) {
+    public String displayGrid(boolean timeOff) {
 
         String col = (timeOff) ? TerminalDisplay.TIMER_OFF_COLOUR : TerminalDisplay.GRID_COLOUR;
-        System.out.println(this.grid.toString(col));
+        return this.grid.toString(col);
     }
 
     /**
      * Displays the timer. Formatted in red if there are 10 seconds left.
      * @param secondsLeft the seconds that have to be formatted to be displayed
+     * @return
      */
-    public void displayTimer(int secondsLeft){
+    public String displayTimer(int secondsLeft){
         int min = secondsLeft / 60;
         int secs = secondsLeft % 60;
         String col = "";
@@ -102,22 +104,23 @@ public class TerminalDisplay {
         else {
             col = TerminalDisplay.GRID_COLOUR;
         }
-        System.out.println(col + strMin + " : " + strSec + TerminalDisplay.RESET_COLOUR);
+        return (col + strMin + " : " + strSec + TerminalDisplay.RESET_COLOUR);
     }
 
     /**
      *
      * @param secondsLeft
+     * @return
      */
-    public void displayMessage(int secondsLeft){
+    public String displayMessage(int secondsLeft){
         if(secondsLeft>10){
-            System.out.println(TerminalDisplay.GRID_COLOUR+ " Let's Go!"+TerminalDisplay.RESET_COLOUR);
+            return (TerminalDisplay.GRID_COLOUR+ " Let's Go!       "+TerminalDisplay.RESET_COLOUR);
         }
         else if (secondsLeft <= 10 && secondsLeft > 0){
-            System.out.println(TerminalDisplay.WARNING_COLOUR+ "10 seconds left!"+TerminalDisplay.RESET_COLOUR);
+            return (TerminalDisplay.WARNING_COLOUR+ secondsLeft+ " seconds left!"+TerminalDisplay.RESET_COLOUR);
         }
         else{
-            System.out.println(TerminalDisplay.TIMER_OFF_COLOUR + "Time's Up!"+TerminalDisplay.RESET_COLOUR);
+            return (TerminalDisplay.TIMER_OFF_COLOUR + "Time's Up!       "+TerminalDisplay.RESET_COLOUR);
         }
     }
 
@@ -128,21 +131,24 @@ public class TerminalDisplay {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                /* *******
-                \x1B[NF Goes back to the beginning of the N-th previous line
-                 ********** */
-
-                // display
-                displayMessage(seconds);
+                // building the display
+                StringBuilder strBuild = new StringBuilder();
+                strBuild.append(displayMessage(seconds)).append("\n");
                 // if time is up
                 if(seconds == 0){
-                    displayGrid(true);
+                    strBuild.append(displayGrid(true));
                     timer.cancel();
                 }
                 else {
-                    displayGrid(false);
+                    strBuild.append(displayGrid(false));
                 }
-                displayTimer(seconds);
+
+                strBuild.append(displayTimer(seconds)).append("\n ");
+
+                if (seconds > 0){
+                    strBuild.append("\u001B[12F");
+                }
+                System.out.println(strBuild.toString());
 
                 //decrease secs left
                 seconds --;
