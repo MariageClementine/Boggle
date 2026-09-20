@@ -116,4 +116,8 @@ public class GameManager {
             this.getGrid().shuffleDice();
         }
     }
+
+    public void endGame(){
+        //retrieves the signal to go back to menu
+    }
 }

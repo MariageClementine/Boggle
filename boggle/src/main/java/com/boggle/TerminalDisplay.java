@@ -128,8 +128,9 @@ public class TerminalDisplay {
 
     /**
      * Displays a game session: the display of the Timer, the message and the Grid.
+     * @return 1 when the timer is over
      */
-    public void displayGame() {
+    public int displayGame() {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
@@ -158,5 +159,6 @@ public class TerminalDisplay {
             }
         };
         timer.scheduleAtFixedRate(task, 0, 1000);
+        return 1;
     }
 }
