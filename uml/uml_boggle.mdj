@@ -1238,8 +1238,8 @@
 											"fillColor": "#FFF2B6",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 256,
-											"top": 296,
+											"left": 736,
+											"top": -56,
 											"height": 13
 										},
 										{
@@ -1251,8 +1251,8 @@
 											"fillColor": "#FFF2B6",
 											"font": "Arial;13;1",
 											"parentStyle": true,
-											"left": 373,
-											"top": 303,
+											"left": 613,
+											"top": 127,
 											"width": 116.25439453125,
 											"height": 13,
 											"text": "Main"
@@ -1267,8 +1267,8 @@
 											"fillColor": "#FFF2B6",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 256,
-											"top": 296,
+											"left": 736,
+											"top": -56,
 											"width": 175.5380859375,
 											"height": 13,
 											"text": "(from src.main.java.c.mariage)"
@@ -1283,8 +1283,8 @@
 											"fillColor": "#FFF2B6",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 256,
-											"top": 296,
+											"left": 736,
+											"top": -56,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
@@ -1292,8 +1292,8 @@
 									"fillColor": "#FFF2B6",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 368,
-									"top": 296,
+									"left": 608,
+									"top": 120,
 									"width": 126.25439453125,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1321,8 +1321,8 @@
 									"fillColor": "#FFF2B6",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 368,
-									"top": 321,
+									"left": 608,
+									"top": 145,
 									"width": 126.25439453125,
 									"height": 10
 								},
@@ -1338,8 +1338,8 @@
 									"fillColor": "#FFF2B6",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 368,
-									"top": 331,
+									"left": 608,
+									"top": 155,
 									"width": 126.25439453125,
 									"height": 10
 								},
@@ -1356,8 +1356,8 @@
 									"fillColor": "#FFF2B6",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 152,
-									"top": 96,
+									"left": 384,
+									"top": -104,
 									"width": 10,
 									"height": 10
 								},
@@ -1374,8 +1374,8 @@
 									"fillColor": "#FFF2B6",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 152,
-									"top": 96,
+									"left": 384,
+									"top": -104,
 									"width": 10,
 									"height": 10
 								}
@@ -1387,8 +1387,8 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"containerChangeable": true,
-							"left": 368,
-							"top": 296,
+							"left": 608,
+							"top": 120,
 							"width": 125.25439453125,
 							"height": 88,
 							"nameCompartment": {
@@ -2875,104 +2875,6 @@
 						},
 						{
 							"_type": "UMLGeneralizationView",
-							"_id": "AAAAAAGgkYjXqoawtvs=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"model": {
-								"$ref": "AAAAAAGgkYjXqYau2fM="
-							},
-							"subViews": [
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAGgkYjXqoax+uw=",
-									"_parent": {
-										"$ref": "AAAAAAGgkYjXqoawtvs="
-									},
-									"model": {
-										"$ref": "AAAAAAGgkYjXqYau2fM="
-									},
-									"font": "Arial;13;0",
-									"parentStyle": false,
-									"left": 640,
-									"top": 256,
-									"width": 63.9716796875,
-									"height": 13,
-									"alpha": 0.0893139885733329,
-									"distance": 201.80436070610565,
-									"hostEdge": {
-										"$ref": "AAAAAAGgkYjXqoawtvs="
-									},
-									"edgePosition": 1,
-									"text": "Launches"
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAGgkYjXqoayHck=",
-									"_parent": {
-										"$ref": "AAAAAAGgkYjXqoawtvs="
-									},
-									"model": {
-										"$ref": "AAAAAAGgkYjXqYau2fM="
-									},
-									"visible": null,
-									"font": "Arial;13;0",
-									"parentStyle": false,
-									"left": 470,
-									"top": 244,
-									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 30,
-									"hostEdge": {
-										"$ref": "AAAAAAGgkYjXqoawtvs="
-									},
-									"edgePosition": 1
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAGgkYjXqoaziRM=",
-									"_parent": {
-										"$ref": "AAAAAAGgkYjXqoawtvs="
-									},
-									"model": {
-										"$ref": "AAAAAAGgkYjXqYau2fM="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"parentStyle": false,
-									"left": 470,
-									"top": 289,
-									"height": 13,
-									"alpha": -1.5707963267948966,
-									"distance": 15,
-									"hostEdge": {
-										"$ref": "AAAAAAGgkYjXqoawtvs="
-									},
-									"edgePosition": 1
-								}
-							],
-							"font": "Arial;13;0",
-							"parentStyle": false,
-							"head": {
-								"$ref": "AAAAAAGgQ9vXSL0JK34="
-							},
-							"tail": {
-								"$ref": "AAAAAAGgjd7LPFhQzJQ="
-							},
-							"lineStyle": 2,
-							"points": "470:296;470:280;832:280",
-							"nameLabel": {
-								"$ref": "AAAAAAGgkYjXqoax+uw="
-							},
-							"stereotypeLabel": {
-								"$ref": "AAAAAAGgkYjXqoayHck="
-							},
-							"propertyLabel": {
-								"$ref": "AAAAAAGgkYjXqoaziRM="
-							}
-						},
-						{
-							"_type": "UMLGeneralizationView",
 							"_id": "AAAAAAGgkY1Hwobf3cE=",
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
@@ -4056,6 +3958,104 @@
 							"propertyLabel": {
 								"$ref": "AAAAAAGgsjTvbVYxf7o="
 							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "AAAAAAGgkYjXqoawtvs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGgkYjXqYau2fM="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgkYjXqoax+uw=",
+									"_parent": {
+										"$ref": "AAAAAAGgkYjXqoawtvs="
+									},
+									"model": {
+										"$ref": "AAAAAAGgkYjXqYau2fM="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 696,
+									"top": 256,
+									"width": 63.9716796875,
+									"height": 13,
+									"alpha": 0.3520442482603833,
+									"distance": 52.20153254455275,
+									"hostEdge": {
+										"$ref": "AAAAAAGgkYjXqoawtvs="
+									},
+									"edgePosition": 1,
+									"text": "Launches"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgkYjXqoayHck=",
+									"_parent": {
+										"$ref": "AAAAAAGgkYjXqoawtvs="
+									},
+									"model": {
+										"$ref": "AAAAAAGgkYjXqYau2fM="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 678,
+									"top": 244,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGgkYjXqoawtvs="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgkYjXqoaziRM=",
+									"_parent": {
+										"$ref": "AAAAAAGgkYjXqoawtvs="
+									},
+									"model": {
+										"$ref": "AAAAAAGgkYjXqYau2fM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 678,
+									"top": 289,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGgkYjXqoawtvs="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgQ9vXSL0JK34="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgjd7LPFhQzJQ="
+							},
+							"lineStyle": 2,
+							"points": "678:208;678:280;832:280",
+							"nameLabel": {
+								"$ref": "AAAAAAGgkYjXqoax+uw="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGgkYjXqoayHck="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGgkYjXqoaziRM="
+							}
 						}
 					]
 				},
@@ -4256,30 +4256,6 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"_type": "UMLClass",
-							"_id": "AAAAAAGgjd7LPFhO8hA=",
-							"_parent": {
-								"$ref": "AAAAAAGgTm8KEHlI4rU="
-							},
-							"name": "Main",
-							"ownedElements": [
-								{
-									"_type": "UMLGeneralization",
-									"_id": "AAAAAAGgkYjXqYau2fM=",
-									"_parent": {
-										"$ref": "AAAAAAGgjd7LPFhO8hA="
-									},
-									"name": "Launches",
-									"source": {
-										"$ref": "AAAAAAGgjd7LPFhO8hA="
-									},
-									"target": {
-										"$ref": "AAAAAAGgQ9vXSL0HKyU="
-									}
 								}
 							]
 						},
@@ -4793,7 +4769,7 @@
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
 											},
 											"name": "GameManager",
-											"documentation": "Constructor."
+											"documentation": "Constructor. Instantiates a new Grid."
 										},
 										{
 											"_type": "UMLOperation",
@@ -4802,7 +4778,7 @@
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
 											},
 											"name": "getGrid",
-											"documentation": "returns the created Grid",
+											"documentation": "Getter for the \"grid \" attribute. Returns the created Grid.",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
@@ -4824,7 +4800,7 @@
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
 											},
 											"name": "displayMenu",
-											"documentation": "Displays a list of the different actions possible (Action Menu enum). returns -1 if the user wants to exit the program, an int otherwise.",
+											"documentation": "Displays a list of the different actions possible (ActionMenu enum).  Returns the value in ActionMenu that the user chose.",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
@@ -4866,7 +4842,7 @@
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
 											},
 											"name": "startGame",
-											"documentation": "Manages a game: the display of the Timer, the message and the Grid."
+											"documentation": "Sets up the grid and calls the TerminalDisplay's classes."
 										}
 									]
 								},
@@ -4957,6 +4933,7 @@
 												"$ref": "AAAAAAGgsibIDFUgWp8="
 											},
 											"name": "timer",
+											"documentation": "The timer that will be used in the game.",
 											"visibility": "private",
 											"type": "Timer"
 										}
@@ -4969,7 +4946,7 @@
 												"$ref": "AAAAAAGgsibIDFUgWp8="
 											},
 											"name": "TerminalDisplay",
-											"documentation": "Constructor. ",
+											"documentation": "Constructor. Retrieves the grid given in parameter and instantiates a new Timer.",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
@@ -4991,6 +4968,7 @@
 												"$ref": "AAAAAAGgsibIDFUgWp8="
 											},
 											"name": "setSeconds",
+											"documentation": "Setter for the seconds left on the timer",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
@@ -5019,7 +4997,7 @@
 												"$ref": "AAAAAAGgsibIDFUgWp8="
 											},
 											"name": "displayGrid",
-											"documentation": "Displays the grid, in an array of 4x4 on the terminal. The values in the Grid are the \"activeFace\" of the Dice in the \"slots\" attribute.",
+											"documentation": "Formats the grid, in an array of 4x4 and with specific colours. The values in the Grid are the \"activeFace\" of the Dice in the \"slots\" attribute.",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
@@ -5077,6 +5055,7 @@
 												"$ref": "AAAAAAGgsibIDFUgWp8="
 											},
 											"name": "displayMessage",
+											"documentation": "Displays a message, which varies depending on the amount of seconds left",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
@@ -5118,6 +5097,30 @@
 									},
 									"name": "DieNotAddedException",
 									"documentation": "Thrown when a Die was not correctly created"
+								}
+							]
+						},
+						{
+							"_type": "UMLClass",
+							"_id": "AAAAAAGgjd7LPFhO8hA=",
+							"_parent": {
+								"$ref": "AAAAAAGgTm8KEHlI4rU="
+							},
+							"name": "Main",
+							"ownedElements": [
+								{
+									"_type": "UMLGeneralization",
+									"_id": "AAAAAAGgkYjXqYau2fM=",
+									"_parent": {
+										"$ref": "AAAAAAGgjd7LPFhO8hA="
+									},
+									"name": "Launches",
+									"source": {
+										"$ref": "AAAAAAGgjd7LPFhO8hA="
+									},
+									"target": {
+										"$ref": "AAAAAAGgQ9vXSL0HKyU="
+									}
 								}
 							]
 						}

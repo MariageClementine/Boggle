@@ -19,12 +19,12 @@ public class GameManager {
     private Difficulty chosenDifficulty;
 
     /**
-     *
+     * The class used to display the game in the terminal
      */
     private TerminalDisplay td;
 
     /**
-     * Constructor.
+     * Constructor. Instantiates a new Grid.
      */
     public GameManager(){
         this.grid = new Grid();
@@ -40,8 +40,8 @@ public class GameManager {
     }
 
     /**
-     * Displays a list of the different actions possible (Action Menu enum).
-     * @return -1 if the user wants to exit the program, an int otherwise
+     * Displays a list of the different actions possible (ActionMenu enum).
+     * @return the value in ActionMenu that the user chose
      */
     public ActionMenu displayMenu(){
         int choice = -1;
@@ -96,7 +96,7 @@ public class GameManager {
     }
 
     /**
-     *
+     * Sets up the grid and calls the TerminalDisplay's classes
      */
     public void startGame() {
         int diff = this.chooseDifficulty();

@@ -35,7 +35,7 @@ public class TerminalDisplay {
 
 
     /**
-     * Constructor.
+     * Constructor. Retrieves the grid given in parameter and instantiates a new Timer.
      */
     public TerminalDisplay(Grid grid){
         this.grid = grid;
@@ -43,7 +43,8 @@ public class TerminalDisplay {
     }
 
     /**
-     *
+     * Setter for the seconds left on the timer
+     * @param secs the seconds left on the timer
      */
     public void setSeconds(int secs){
         this.seconds = secs;
@@ -70,8 +71,9 @@ public class TerminalDisplay {
     }
 
     /**
-     * Displays the grid, in an array of 4x4 on the terminal. The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
-     * @return
+     * Formats the grid, in an array of 4x4 and with specific colours. The values in the Grid are the "activeFace" of the Dice in the "slots" attribute.
+     * @param timeOff true id the timer has ended, false if not.
+     * @return A String representing the grid.
      */
     public String displayGrid(boolean timeOff) {
 
@@ -82,7 +84,7 @@ public class TerminalDisplay {
     /**
      * Displays the timer. Formatted in red if there are 10 seconds left.
      * @param secondsLeft the seconds that have to be formatted to be displayed
-     * @return
+     * @return the timer in a "mm:ss" String format.
      */
     public String displayTimer(int secondsLeft){
         int min = secondsLeft / 60;
@@ -108,9 +110,9 @@ public class TerminalDisplay {
     }
 
     /**
-     *
-     * @param secondsLeft
-     * @return
+     * Displays a message, which varies depending on the amount of seconds left
+     * @param secondsLeft the seconds left on the timer
+     * @return the message, in a String format
      */
     public String displayMessage(int secondsLeft){
         if(secondsLeft>10){
