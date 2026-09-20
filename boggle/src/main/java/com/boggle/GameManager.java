@@ -96,7 +96,7 @@ public class GameManager {
     }
 
     /**
-     * Sets up the grid and calls the TerminalDisplay's classes
+     * Sets up the grid and calls the TerminalDisplay's class
      */
     public void startGame() {
         int diff = this.chooseDifficulty();

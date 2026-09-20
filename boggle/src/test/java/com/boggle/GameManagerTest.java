@@ -1,7 +1,8 @@
 package com.boggle;
 
-import com.boggle.GameManager;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 class GameManagerTest {
 
@@ -12,10 +13,10 @@ class GameManagerTest {
         this.gm = new GameManager();
     }
 
-    /*
-        gm.displayRules();
-        gm.getGrid().shuffleDice();
-        gm.displayGrid(true);
-        gm.displayGrid(false);
-     */
+    @Test
+    public void correctlyCreatedTest(){
+        assertNotNull(this.gm.getGrid());
+
+    }
+
 }

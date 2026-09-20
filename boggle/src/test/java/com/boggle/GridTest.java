@@ -1,7 +1,5 @@
 package com.boggle;
 
-import com.boggle.Die;
-import com.boggle.Grid;
 import com.boggle.exception.DieNotAddedException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
