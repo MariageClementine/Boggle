@@ -96,9 +96,9 @@ public class GameManager {
     }
 
     /**
-     * Sets up the grid and calls the TerminalDisplay's class
+     * Sets up the grid and calls the TerminalDisplay's methods
      */
-    public void startGame() {
+    public int playGame() {
         int diff = this.chooseDifficulty();
 
         //in case we have to return to the menu
@@ -110,14 +110,14 @@ public class GameManager {
             this.td = new TerminalDisplay(this.grid);
             this.td.setSeconds(this.chosenDifficulty.getSeconds());
 
-            //using the TerminalDisplay
-
             //setting the grid for a session
             this.getGrid().shuffleDice();
-        }
-    }
 
-    public void endGame(){
-        //retrieves the signal to go back to menu
+            //using the TerminalDisplay
+            this.td.displayGame();
+
+
+        }
+        return 0;
     }
 }

@@ -1,9 +1,13 @@
 package com.boggle;
 
+import com.boggle.util.Input;
+
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.stream.Collectors;
@@ -128,9 +132,8 @@ public class TerminalDisplay {
 
     /**
      * Displays a game session: the display of the Timer, the message and the Grid.
-     * @return 1 when the timer is over
      */
-    public int displayGame() {
+    public void displayGame() {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
@@ -138,27 +141,26 @@ public class TerminalDisplay {
                 StringBuilder strBuild = new StringBuilder();
                 strBuild.append(displayMessage(seconds)).append("\n");
                 // if time is up
-                if(seconds == 0){
+                if (seconds == 0) {
                     strBuild.append(displayGrid(true));
                     timer.cancel();
-                }
-                else {
+                } else {
                     strBuild.append(displayGrid(false));
                 }
 
                 strBuild.append(displayTimer(seconds)).append("\n ");
 
-                if (seconds > 0){
+                if (seconds > 0) {
                     strBuild.append("\u001B[12F");
                 }
                 System.out.println(strBuild.toString());
 
                 //decrease secs left
-                seconds --;
+                seconds--;
 
             }
         };
         timer.scheduleAtFixedRate(task, 0, 1000);
-        return 1;
     }
+
 }
