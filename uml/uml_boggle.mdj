@@ -552,7 +552,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 944,
-									"top": 624,
+									"top": 636,
 									"width": 58.89990234375,
 									"height": 13,
 									"alpha": 1.678485714201404,
@@ -576,7 +576,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 965,
-									"top": 627,
+									"top": 639,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -598,7 +598,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 921,
-									"top": 628,
+									"top": 640,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -617,7 +617,7 @@
 								"$ref": "AAAAAAGgQ+B20b3Ee0U="
 							},
 							"lineStyle": 2,
-							"points": "936:613;936:656",
+							"points": "936:621;936:672",
 							"nameLabel": {
 								"$ref": "AAAAAAGgRCLZ5cMF6Hg="
 							},
@@ -650,7 +650,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 920,
-									"top": 352,
+									"top": 360,
 									"width": 53.11083984375,
 									"height": 13,
 									"alpha": 1.8568472722277354,
@@ -674,7 +674,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 941,
-									"top": 361,
+									"top": 369,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -696,7 +696,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 897,
-									"top": 362,
+									"top": 370,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -715,7 +715,7 @@
 								"$ref": "AAAAAAGgQ9vXSL0JK34="
 							},
 							"lineStyle": 2,
-							"points": "912:345;912:392",
+							"points": "912:352;912:400",
 							"nameLabel": {
 								"$ref": "AAAAAAGgRCG4L8Ll768="
 							},
@@ -1720,8 +1720,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 176,
-											"top": 280,
+											"left": 160,
+											"top": 312,
 											"height": 13
 										},
 										{
@@ -1733,8 +1733,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;1",
 											"parentStyle": true,
-											"left": 845,
-											"top": 663,
+											"left": 837,
+											"top": 679,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "Die"
@@ -1749,8 +1749,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 176,
-											"top": 280,
+											"left": 160,
+											"top": 312,
 											"width": 175.5380859375,
 											"height": 13,
 											"text": "(from game)"
@@ -1765,8 +1765,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 176,
-											"top": 280,
+											"left": 160,
+											"top": 312,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
@@ -1774,8 +1774,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 840,
-									"top": 656,
+									"left": 832,
+									"top": 672,
 									"width": 163.84521484375,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1813,8 +1813,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 686,
+											"left": 837,
+											"top": 702,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "-faces: String[6]",
@@ -1832,8 +1832,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 701,
+											"left": 837,
+											"top": 717,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "-activeFace: String",
@@ -1851,8 +1851,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 716,
+											"left": 837,
+											"top": 732,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "-inSlot: boolean",
@@ -1862,8 +1862,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 840,
-									"top": 681,
+									"left": 832,
+									"top": 697,
 									"width": 163.84521484375,
 									"height": 53
 								},
@@ -1889,8 +1889,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 739,
+											"left": 837,
+											"top": 755,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "+Die(List<String>)",
@@ -1908,8 +1908,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 754,
+											"left": 837,
+											"top": 770,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "+getActiveFace(): String",
@@ -1927,8 +1927,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 769,
+											"left": 837,
+											"top": 785,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "+getFaces(): String",
@@ -1946,8 +1946,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 784,
+											"left": 837,
+											"top": 800,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "+isInSlot(): boolean",
@@ -1965,8 +1965,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 799,
+											"left": 837,
+											"top": 815,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "+setInSlot(inSlot: boolean)",
@@ -1984,8 +1984,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 814,
+											"left": 837,
+											"top": 830,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "+rollDie()",
@@ -2003,8 +2003,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 845,
-											"top": 829,
+											"left": 837,
+											"top": 845,
 											"width": 153.84521484375,
 											"height": 13,
 											"text": "+toString(): String",
@@ -2014,8 +2014,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 840,
-									"top": 734,
+									"left": 832,
+									"top": 750,
 									"width": 163.84521484375,
 									"height": 113
 								},
@@ -2032,8 +2032,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 1080,
-									"top": 456,
+									"left": 1072,
+									"top": 472,
 									"width": 10,
 									"height": 10
 								},
@@ -2050,8 +2050,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 1080,
-									"top": 456,
+									"left": 1072,
+									"top": 472,
 									"width": 10,
 									"height": 10
 								}
@@ -2063,8 +2063,8 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"containerChangeable": true,
-							"left": 840,
-							"top": 656,
+							"left": 832,
+							"top": 672,
 							"width": 162.84521484375,
 							"height": 191,
 							"nameCompartment": {
@@ -2113,8 +2113,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 264,
-											"top": 320,
+											"left": 280,
+											"top": 336,
 											"height": 13
 										},
 										{
@@ -2126,8 +2126,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;1",
 											"parentStyle": true,
-											"left": 797,
-											"top": 399,
+											"left": 805,
+											"top": 407,
 											"width": 245.5625,
 											"height": 13,
 											"text": "Grid"
@@ -2142,8 +2142,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 264,
-											"top": 320,
+											"left": 280,
+											"top": 336,
 											"width": 175.5380859375,
 											"height": 13,
 											"text": "(from game)"
@@ -2158,8 +2158,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 264,
-											"top": 320,
+											"left": 280,
+											"top": 336,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
@@ -2167,8 +2167,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 792,
-									"top": 392,
+									"left": 800,
+									"top": 400,
 									"width": 255.5625,
 									"height": 25,
 									"stereotypeLabel": {
@@ -2206,8 +2206,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 422,
+											"left": 805,
+											"top": 430,
 											"width": 245.5625,
 											"height": 13,
 											"underline": true,
@@ -2226,8 +2226,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 437,
+											"left": 805,
+											"top": 445,
 											"width": 245.5625,
 											"height": 13,
 											"text": "-slots: Die[][]",
@@ -2245,8 +2245,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 452,
+											"left": 805,
+											"top": 460,
 											"width": 245.5625,
 											"height": 13,
 											"text": "-diceArray: Die[]",
@@ -2256,8 +2256,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 792,
-									"top": 417,
+									"left": 800,
+									"top": 425,
 									"width": 255.5625,
 									"height": 53
 								},
@@ -2283,8 +2283,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 475,
+											"left": 805,
+											"top": 483,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+Grid()",
@@ -2302,8 +2302,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 490,
+											"left": 805,
+											"top": 498,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+getSlots(): Die",
@@ -2321,8 +2321,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 505,
+											"left": 805,
+											"top": 513,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+setSlot(xSlot: int, ySlot: int, die: DIe): int()",
@@ -2340,8 +2340,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 520,
+											"left": 805,
+											"top": 528,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+getDiceArray() : Die[]()",
@@ -2359,8 +2359,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 535,
+											"left": 805,
+											"top": 543,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+createDie(List<String>): Die",
@@ -2378,8 +2378,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 550,
+											"left": 805,
+											"top": 558,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+addDieToArray(pos: int, Die: die)",
@@ -2397,8 +2397,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 565,
+											"left": 805,
+											"top": 573,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+toString(colour: String): String",
@@ -2416,8 +2416,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 580,
+											"left": 805,
+											"top": 588,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+shuffleDice()",
@@ -2435,8 +2435,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 797,
-											"top": 595,
+											"left": 805,
+											"top": 603,
 											"width": 245.5625,
 											"height": 13,
 											"text": "+resetGrid()",
@@ -2446,8 +2446,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 792,
-									"top": 470,
+									"left": 800,
+									"top": 478,
 									"width": 255.5625,
 									"height": 143
 								},
@@ -2464,8 +2464,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 1200,
-									"top": 624,
+									"left": 1208,
+									"top": 632,
 									"width": 10,
 									"height": 10
 								},
@@ -2482,8 +2482,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 1200,
-									"top": 624,
+									"left": 1208,
+									"top": 632,
 									"width": 10,
 									"height": 10
 								}
@@ -2495,8 +2495,8 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"containerChangeable": true,
-							"left": 792,
-							"top": 392,
+							"left": 800,
+							"top": 400,
 							"width": 254.5625,
 							"height": 221,
 							"autoResize": true,
@@ -2546,8 +2546,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 248,
-											"top": 432,
+											"left": 232,
+											"top": 416,
 											"height": 13
 										},
 										{
@@ -2559,9 +2559,9 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;1",
 											"parentStyle": true,
-											"left": 837,
-											"top": 191,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 183,
+											"width": 260.53662109375,
 											"height": 13,
 											"text": "GameManager"
 										},
@@ -2575,8 +2575,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 248,
-											"top": 432,
+											"left": 232,
+											"top": 416,
 											"width": 175.5380859375,
 											"height": 13,
 											"text": "(from game)"
@@ -2591,8 +2591,8 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 248,
-											"top": 432,
+											"left": 232,
+											"top": 416,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
@@ -2600,9 +2600,9 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 832,
-									"top": 184,
-									"width": 176.10888671875,
+									"left": 824,
+									"top": 176,
+									"width": 270.53662109375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGgQ9vXSb0Le04="
@@ -2639,9 +2639,9 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 214,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 206,
+											"width": 260.53662109375,
 											"height": 13,
 											"text": "-grid: Grid",
 											"horizontalAlignment": 0
@@ -2658,9 +2658,9 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 229,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 221,
+											"width": 260.53662109375,
 											"height": 13,
 											"text": "-chosenDifficulty: Difficulty",
 											"horizontalAlignment": 0
@@ -2677,9 +2677,9 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 244,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 236,
+											"width": 260.53662109375,
 											"height": 13,
 											"text": "-td: TerminalDisplay",
 											"horizontalAlignment": 0
@@ -2688,9 +2688,9 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 832,
-									"top": 209,
-									"width": 176.10888671875,
+									"left": 824,
+									"top": 201,
+									"width": 270.53662109375,
 									"height": 53
 								},
 								{
@@ -2715,9 +2715,9 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 267,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 259,
+											"width": 260.53662109375,
 											"height": 13,
 											"text": "+GameManager()",
 											"horizontalAlignment": 0
@@ -2734,9 +2734,9 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 282,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 274,
+											"width": 260.53662109375,
 											"height": 13,
 											"autoResize": true,
 											"text": "+getGrid(): Grid",
@@ -2754,11 +2754,30 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 297,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 289,
+											"width": 260.53662109375,
 											"height": 13,
-											"text": "+displayMenu(): ActionMenu",
+											"text": "+displayMenu(isATest: boolean): ActionMenu",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGgzsVwtFuOfHs=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ9vXSb0QcG4="
+											},
+											"model": {
+												"$ref": "AAAAAAGgzsVwlVuLBmY="
+											},
+											"fillColor": "#C4D6E9",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 829,
+											"top": 304,
+											"width": 260.53662109375,
+											"height": 13,
+											"text": "+getChosenDifficulty(): Difficulty",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2773,11 +2792,11 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 312,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 319,
+											"width": 260.53662109375,
 											"height": 13,
-											"text": "+chooseDfficulty(): int",
+											"text": "+chooseDfficulty(isATest: boolean): int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2792,9 +2811,9 @@
 											"fillColor": "#C4D6E9",
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 837,
-											"top": 327,
-											"width": 166.10888671875,
+											"left": 829,
+											"top": 334,
+											"width": 260.53662109375,
 											"height": 13,
 											"text": "+startGame()",
 											"horizontalAlignment": 0
@@ -2803,10 +2822,10 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 832,
-									"top": 262,
-									"width": 176.10888671875,
-									"height": 83
+									"left": 824,
+									"top": 254,
+									"width": 270.53662109375,
+									"height": 98
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -2821,8 +2840,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 1136,
-									"top": 752,
+									"left": 1128,
+									"top": 744,
 									"width": 10,
 									"height": 10
 								},
@@ -2839,8 +2858,8 @@
 									"fillColor": "#C4D6E9",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 1136,
-									"top": 752,
+									"left": 1128,
+									"top": 744,
 									"width": 10,
 									"height": 10
 								}
@@ -2852,10 +2871,10 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"containerChangeable": true,
-							"left": 832,
-							"top": 184,
-							"width": 175.10888671875,
-							"height": 161,
+							"left": 824,
+							"top": 176,
+							"width": 269.53662109375,
+							"height": 176,
 							"autoResize": true,
 							"nameCompartment": {
 								"$ref": "AAAAAAGgQ9vXSb0KOkc="
@@ -2960,7 +2979,7 @@
 								"$ref": "AAAAAAGgQ9vXSL0JK34="
 							},
 							"lineStyle": 2,
-							"points": "832:328;632:328;632:544",
+							"points": "824:328;632:328;632:544",
 							"nameLabel": {
 								"$ref": "AAAAAAGgkY1Hwobgejc="
 							},
@@ -3850,7 +3869,7 @@
 								"$ref": "AAAAAAGgQ9vXSL0JK34="
 							},
 							"lineStyle": 2,
-							"points": "832:328;512:328;512:536",
+							"points": "824:328;512:328;512:536",
 							"nameLabel": {
 								"$ref": "AAAAAAGgsjQ+4lYViwg="
 							},
@@ -3882,12 +3901,12 @@
 									},
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 1088,
+									"left": 1120,
 									"top": 255,
 									"width": 41.54541015625,
 									"height": 13,
-									"alpha": -1.8033534117443695,
-									"distance": 78.10249675906654,
+									"alpha": -1.9591152382497594,
+									"distance": 47.53945729601885,
 									"hostEdge": {
 										"$ref": "AAAAAAGgsjTvbVYuv40="
 									},
@@ -3948,7 +3967,7 @@
 								"$ref": "AAAAAAGgQ9vXSL0JK34="
 							},
 							"lineStyle": 2,
-							"points": "1007:280;1184:280;1184:368",
+							"points": "1094:280;1184:280;1184:368",
 							"nameLabel": {
 								"$ref": "AAAAAAGgsjTvbVYvJ2M="
 							},
@@ -4046,7 +4065,7 @@
 								"$ref": "AAAAAAGgjd7LPFhQzJQ="
 							},
 							"lineStyle": 2,
-							"points": "678:208;678:280;832:280",
+							"points": "678:208;678:280;824:280",
 							"nameLabel": {
 								"$ref": "AAAAAAGgkYjXqoax+uw="
 							},
@@ -4812,6 +4831,36 @@
 														"$ref": "AAAAAAGgkJukeLiTMa4="
 													},
 													"direction": "return"
+												},
+												{
+													"_type": "UMLParameter",
+													"_id": "AAAAAAGgzsT+9FuF9nI=",
+													"_parent": {
+														"$ref": "AAAAAAGgotDxQNtwfJU="
+													},
+													"name": "isATest",
+													"type": "boolean"
+												}
+											]
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGgzsVwlVuLBmY=",
+											"_parent": {
+												"$ref": "AAAAAAGgQ9vXSL0HKyU="
+											},
+											"name": "getChosenDifficulty",
+											"parameters": [
+												{
+													"_type": "UMLParameter",
+													"_id": "AAAAAAGgzsWq+FuSQlA=",
+													"_parent": {
+														"$ref": "AAAAAAGgzsVwlVuLBmY="
+													},
+													"type": {
+														"$ref": "AAAAAAGgkHrHLLgrIIY="
+													},
+													"direction": "return"
 												}
 											]
 										},
@@ -4832,6 +4881,15 @@
 													},
 													"type": "int",
 													"direction": "return"
+												},
+												{
+													"_type": "UMLParameter",
+													"_id": "AAAAAAGgzsU9DluIB/w=",
+													"_parent": {
+														"$ref": "AAAAAAGgQ9zJNb0ysBo="
+													},
+													"name": "isATest",
+													"type": "boolean"
 												}
 											]
 										},

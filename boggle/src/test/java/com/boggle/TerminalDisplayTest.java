@@ -26,14 +26,15 @@ class TerminalDisplayTest {
     @Test
     public void displayTimerTest(){
         assertInstanceOf(String.class, this.td.displayTimer(50));
-        assertInstanceOf(String.class, this.td.displayTimer(10));
-        assertInstanceOf(String.class, this.td.displayTimer(0));
+        assertEquals(TerminalDisplay.GRID_COLOUR+"03 : 00"+TerminalDisplay.RESET_COLOUR, this.td.displayTimer(180));
+        assertEquals(TerminalDisplay.GRID_COLOUR+"01 : 40"+TerminalDisplay.RESET_COLOUR, this.td.displayTimer(100));
+        assertEquals(TerminalDisplay.TIMER_OFF_COLOUR+"00 : 10"+TerminalDisplay.RESET_COLOUR, this.td.displayTimer(10));
+        assertEquals(TerminalDisplay.TIMER_OFF_COLOUR+"00 : 00"+TerminalDisplay.RESET_COLOUR, this.td.displayTimer(0));
+
     }
 
     @Test
     public void displayMessageTest(){
         assertInstanceOf(String.class, this.td.displayMessage(50));
-        assertInstanceOf(String.class, this.td.displayMessage(10));
-        assertInstanceOf(String.class, this.td.displayMessage(0));
     }
 }

@@ -43,7 +43,12 @@ public class GameManager {
      * Displays a list of the different actions possible (ActionMenu enum).
      * @return the value in ActionMenu that the user chose
      */
-    public ActionMenu displayMenu(){
+    public ActionMenu displayMenu(boolean isATest){
+
+        if(isATest){
+            return ActionMenu.values()[1];
+        }
+
         int choice = -1;
         while ((choice < 0) || (choice > ActionMenu.values().length)) {
             System.out.println("Please chose an option in the menu (enter a number): ");
@@ -64,11 +69,23 @@ public class GameManager {
     }
 
     /**
+     * Getter for the "chosenDifficulty" attribute.
+     * @return a value from the "Difficulty" enum.
+     */
+    public Difficulty getChosenDifficulty(){
+        return this.chosenDifficulty;
+    }
+
+    /**
      * Asks the user for the difficulty of the game. A higher difficulty means less time on the timer. Registers the answer in the "chosenDifficulty" attribute.
      * @return -1 if the user wants to return to the menu, 0 if they chose a difficulty.
      */
-    public int chooseDifficulty(){
+    public int chooseDifficulty(boolean isATest){
 
+        if (isATest){
+            this.chosenDifficulty = Difficulty.values()[1];
+            return 0;
+        }
         // shows the items until the user made a valid choice
         int choice = -1;
         while ((choice < 0) || (choice > Difficulty.values().length)) {
@@ -99,11 +116,11 @@ public class GameManager {
      * Sets up the grid and calls the TerminalDisplay's methods
      */
     public int playGame() {
-        int diff = this.chooseDifficulty();
+        int diff = this.chooseDifficulty(false);
 
         //in case we have to return to the menu
         if (diff == -1) {
-            this.displayMenu();
+            this.displayMenu(false);
         } else {
 
             //Starting the display

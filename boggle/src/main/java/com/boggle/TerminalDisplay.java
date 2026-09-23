@@ -94,14 +94,14 @@ public class TerminalDisplay {
         int min = secondsLeft / 60;
         int secs = secondsLeft % 60;
         String col = "";
-        String strMin = "";
-        String strSec = "";
+        String strMin = String.valueOf(min);
+        String strSec = String.valueOf(secs);
 
         if(min<10){
-            strMin = "0"+ String.valueOf(min);
+            strMin = "0"+ strMin;
         }
         if(secs < 10){
-            strSec = "0" + String.valueOf(secs);
+            strSec = "0" + strSec ;
         }
 
         if(min == 0 && secs <= 10){

@@ -18,7 +18,7 @@ public class Main {
         boolean playingGame = false;
 
         while(!playingGame) {
-            ActionMenu menuChoice = gm.displayMenu();
+            ActionMenu menuChoice = gm.displayMenu(false);
             switch (menuChoice) {
                 case EXIT:
                     System.out.println("See you later!");
