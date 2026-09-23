@@ -9,6 +9,13 @@ Le concept complet est [ici](Boggle_Concept.pdf)
 Ce projet est mis en suspens à compter du 23 septembre 2026.
 J'ai pris plaisir à le développer, mais il est relativement basique, et je souhaite consacrer plus de temps sur la pratique de sujets que je suis en train d'apprendre (Spring, par exemple). Le jar est fonctionnel, mais je n'estime pas le travail fini pour autant. Je compte ajouter une possibilité de quitter proprement le jeu ou de revenir au menu une fois une partie terminée. Je compte égelement toujours faire une appli équivalente pour site web ainsi que pour Android. Cependant, ces fonctionnalités devront attendre un peu.
 
+
+__Voici le rendu actuel:__
+![Menu d'accueil](screenshots/1-MenudAccueil.png)
+![Début de partie](screenshots/2-partieLancee.png)
+![10 secondes restantes](screenshots/3-warningTemps.png)
+![Partie terminée](screenshots/4-partieFinie.png)
+
 ---
 
 ### Outils utilisés: 
