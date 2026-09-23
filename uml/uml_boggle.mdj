@@ -4850,6 +4850,7 @@
 												"$ref": "AAAAAAGgQ9vXSL0HKyU="
 											},
 											"name": "getChosenDifficulty",
+											"documentation": "Getter for the \"chosenDifficulty\" attribute. Returns a value from the \"Difficulty\" enum.",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
